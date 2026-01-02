@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IndexFilesButton" xml:space="preserve">
+    <value>Re-index Mods</value>
+  </data>
+  <data name="IndexFilesButtonLabel" xml:space="preserve">
+    <value>Use this when adding new script mods and not having automatic re-indexing enabled.</value>
+  </data>
+  <data name="IndexFilesDescription" xml:space="preserve">
+    <value>This page shows the script file paths that should be loaded by the Sims 4, separated by their origin. Some script may not be shown here, as they may be generated only when the game is running or are in general not accessible outside the game.
+
+Note, that while some of the script paths may look like file paths, they will usually not actually exist on your own computer. Usually these paths are the file paths at the time the modder is packaging the mod.</value>
+  </data>
+  <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
+    <value>Call Stack</value>
+  </data>
+  <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
+    <value>Script Exception Message</value>
+  </data>
+  <data name="LeFileTabContentLabelInGameMessage" xml:space="preserve">
+    <value>In-game Exception Message</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink1" xml:space="preserve">
+    <value>For more information click</value>
+    <comment>Before hyperlink</comment>
+  </data>
+  <data name="LeFileTabDragAndDrop" xml:space="preserve">
+    <value>LE files can be dragged-and-dropped here.</value>
+  </data>
+  <data name="SettingsAutoOpenLatestDescription" xml:space="preserve">
+    <value>If enabled automatically opens the latest LE file while the program is running.
+All open LE files will also be closed when you start The Sims 4, so you don't have any old LEs open.</value>
+  </data>
+  <data name="SettingsAutoOpenLatestLabel" xml:space="preserve">
+    <value>Automatically open LE file</value>
+  </data>
+  <data name="SettingsLanguageDescription" xml:space="preserve">
+    <value>Application language. Some texts may still be in the language set at startup until the associated UI elements are reloaded or the program is restarted.</value>
+  </data>
+  <data name="SettingsLanguageLabel" xml:space="preserve">
+    <value>Language</value>
+    <comment>Put " (Language)" after the actual translation so that people that accidentally change the language know that they have to change this.</comment>
+  </data>
+  <data name="SettingsButtonChangePath" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="SettingsTS4FolderDescription" xml:space="preserve">
+    <value>Path to your "The Sims 4" folder, that also contains the "Mods" folder that your mods are kept in.
+Normally found in:
+User folder -&gt; "Documents" -&gt; "Electronic Arts" -&gt; "The Sims 4"
+
+Depending on your in-game language, the "The Sims 4" folder may be translated to that language.</value>
+  </data>
+  <data name="SettingsTS4FolderLabel" xml:space="preserve">
+    <value>"The Sims 4" Folder Path</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderDescription" xml:space="preserve">
+    <value>The folder where your game installation is located.
+This folder should contain various subfolders, such as "Game", "Data", as well as folders for DLC labeled like "EP01", "GP03" or "SP06".</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
+    <value>The Sims 4 Installation Folder</value>
+  </data>
+  <data name="TabIndexFiles" xml:space="preserve">
+    <value>Script Index</value>
+  </data>
+  <data name="TabLeFile" xml:space="preserve">
+    <value>LE Files</value>
+  </data>
+  <data name="TabSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontLabel" xml:space="preserve">
+    <value>Bring to Front on Auto-Open</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontDescription" xml:space="preserve">
+    <value>If this option and "Auto-Open latest LE file" are both enabled, the program will force its window in front of other applications' (including TS4's) when opening an LE file.
+Useful if you only have a single monitor.</value>
+  </data>
+  <data name="LeFileTabDataGridOrigin" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="LeFileTabDataGridFile" xml:space="preserve">
+    <value>Script file</value>
+  </data>
+  <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
+    <value>Script Call</value>
+  </data>
+  <data name="LeFileTabDataGridLine" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="GenericDialogueSelectFolder" xml:space="preserve">
+    <value>Select a Folder</value>
+  </data>
+  <data name="IndexFilesEntryLabelType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IndexFilesEntryLabelPath" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="IndexFilesEntryLabelContained" xml:space="preserve">
+    <value>Contained script file paths</value>
+  </data>
+  <data name="GenericLanguage_zh_CN" xml:space="preserve">
+    <value>Chinese - Simplified (汉语)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_zh_TW" xml:space="preserve">
+    <value>Chinese - Traditional (漢語)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_en_US" xml:space="preserve">
+    <value>English</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_cs_CZ" xml:space="preserve">
+    <value>Czech (Čeština)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_da_DK" xml:space="preserve">
+    <value>Danish (Dansk)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_nl_NL" xml:space="preserve">
+    <value>Dutch (Nederlands)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_fi_FI" xml:space="preserve">
+    <value>Finnish (Suomi)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_fr_FR" xml:space="preserve">
+    <value>French (Français)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_de_AT" xml:space="preserve">
+    <value>German (Deutsch)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_it_IT" xml:space="preserve">
+    <value>Italian (Italiano)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_ja_JP" xml:space="preserve">
+    <value>Japanese (日本語)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_ko_KR" xml:space="preserve">
+    <value>Korean (한국어)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_nb_NO" xml:space="preserve">
+    <value>Norwegian - Bokmål (Norsk - Bokmål)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_pl_PL" xml:space="preserve">
+    <value>Polish (Polszczyzna)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_ru_RU" xml:space="preserve">
+    <value>Russian (Русский)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_es_ES" xml:space="preserve">
+    <value>Spanish (Español)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_sv_SE" xml:space="preserve">
+    <value>Swedish (Svenska)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="GenericLanguage_pt_BR" xml:space="preserve">
+    <value>Portuguese - Brazil (Português Brasileiro)</value>
+    <comment>Please leave this alone.</comment>
+  </data>
+  <data name="SettingsAutoReIndexLabel" xml:space="preserve">
+    <value>Auto Re-index Mods</value>
+  </data>
+  <data name="SettingsAutoReIndexDescription" xml:space="preserve">
+    <value>If enabled automatically re-indexes your script mods when changes happen in your Mods folder. Makes you not have to manually re-index your mods on the "Script Index" page.</value>
+  </data>
+  <data name="LeFileTabButtonLoadRecentLes" xml:space="preserve">
+    <value>Load available LE files</value>
+  </data>
+  <data name="LeFileTabButtonClearLes" xml:space="preserve">
+    <value>Delete available LE files</value>
+  </data>
+  <data name="LeFileTabLabelButtonOperators" xml:space="preserve">
+    <value>Functions for manual operation</value>
+  </data>
+  <data name="LeFileTabOriginUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="LeFileTabOriginTheSims4" xml:space="preserve">
+    <value>The Sims 4</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink2" xml:space="preserve">
+    <value>here</value>
+    <comment>Hyperlink</comment>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink3" xml:space="preserve">
+    <value>.</value>
+    <comment>After hyperlink</comment>
+  </data>
+  <data name="IndexFilesEntryTypeZipped" xml:space="preserve">
+    <value>.ts4script or .zip file</value>
+  </data>
+  <data name="IndexFilesEntryTypeZippedMultiple" xml:space="preserve">
+    <value>Aggregation of multiple zipped files</value>
+  </data>
+  <data name="IndexFilesEntryTypeFolder" xml:space="preserve">
+    <value>Loose "Scripts" folder with scripts</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
+    <value>Bottom-most entries of the call stack happened closer to the exception. This doesn't mean that the bottom-most mentioned mod must be the cause of the exception. It only means that the mod's script was called closer to when the exception happened.</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
+    <value>You can double click on a row to open the path to the mod listed in the Origin column.</value>
+  </data>
+  <data name="DialogueLoadLeContainsNoLEInside" xml:space="preserve">
+    <value>The file that was attempted to be loaded did not contain a valid LE call stack.
+File: {0}</value>
+  </data>
+  <data name="DialogueLoadLeGeneralError" xml:space="preserve">
+    <value>Error on trying to load LE file</value>
+  </data>
+  <data name="DialogueLoadLeNotXML" xml:space="preserve">
+    <value>The file that was attempted to be loaded does not seem to be a valid XML file and as such not an LE file.
+File: {0}
+Error: {1}</value>
+  </data>
+  <data name="DialogueLoadLeCouldNotLoad" xml:space="preserve">
+    <value>The LE file that was attempted to be loaded could not loaded.
+File: {0}
+Error: {1}</value>
+  </data>
+  <data name="DialogueGeneralError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="DialogueClearLesError" xml:space="preserve">
+    <value>One or more LE files could not be removed from your "The Sims 4" folder. You may want to remove them yourself.
+Open "The Sims 4" folder now?</value>
+  </data>
+  <data name="DialogueVerifyPathDoesNotExist" xml:space="preserve">
+    <value>The path provided does not actually seem to exist.</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderSubfolderError" xml:space="preserve">
+    <value>The provided path does not seem to a game installation directory, as its subdirectories do not reflect that of one.</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderNoPythonZips" xml:space="preserve">
+    <value>The provided path does seem to be a game installation directory. However, there were no base game scripts found.
+Try repairing (EA) or verifying (Steam) your game files.</value>
+  </data>
+  <data name="DialogueVerifyTs4DocumentsFolderSubfolderError" xml:space="preserve">
+    <value>The provided path does not seem to resemble the "The Sims 4" directory as it either contains no "Mods" folder or the "GameVersion.txt" file.</value>
+  </data>
+  <data name="DialogueSettingsFileError" xml:space="preserve">
+    <value>Could not read settings file.
+Error: {0}
+
+Abort program?</value>
+  </data>
+  <data name="DialogueSettingsGeneralError" xml:space="preserve">
+    <value>Settings error</value>
+  </data>
+  <data name="DialogueSettingsPathsNull" xml:space="preserve">
+    <value>The path to your "The Sims 4" folder and/or the path to your game installation could not be identified.
+Go to the settings and set them manually.</value>
+  </data>
+</root>

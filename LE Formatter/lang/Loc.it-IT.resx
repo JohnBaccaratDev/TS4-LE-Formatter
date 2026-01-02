@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IndexFilesButton" xml:space="preserve">
+    <value>Reindicizza mod</value>
+  </data>
+  <data name="IndexFilesButtonLabel" xml:space="preserve">
+    <value>Usa questa opzione quando aggiungi nuove mod di script e non hai la reindicizzazione automatica attivata.</value>
+  </data>
+  <data name="IndexFilesDescription" xml:space="preserve">
+    <value>Questa pagina mostra i percorsi dei file di script che dovrebbero essere caricati da The Sims 4, separati in base alla loro origine. Alcuni script potrebbero non essere visualizzati qui, poiché possono essere generati solo durante l’esecuzione del gioco o generalmente non sono accessibili al di fuori del gioco.
+
+Nota che, anche se alcuni percorsi degli script sembrano percorsi di file, di solito non esistono realmente sul tuo computer. Questi percorsi sono generalmente quelli presenti al momento in cui il modder ha impacchettato la mod.</value>
+  </data>
+  <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
+    <value>Stack di chiamate</value>
+  </data>
+  <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
+    <value>Messaggio di eccezione dello script</value>
+  </data>
+  <data name="LeFileTabContentLabelInGameMessage" xml:space="preserve">
+    <value>Messaggio di eccezione nel gioco</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink1" xml:space="preserve">
+    <value>Per maggiori informazioni fai clic</value>
+  </data>
+  <data name="LeFileTabDragAndDrop" xml:space="preserve">
+    <value>I file LE possono essere trascinati qui.</value>
+  </data>
+  <data name="SettingsAutoOpenLatestDescription" xml:space="preserve">
+    <value>Se abilitato, il file LE più recente viene aperto automaticamente mentre il programma è in esecuzione.
+Tutti i file LE aperti verranno anche chiusi quando avvii The Sims 4, evitando di lasciare aperti LE vecchi.</value>
+  </data>
+  <data name="SettingsAutoOpenLatestLabel" xml:space="preserve">
+    <value>Apri automaticamente i file LE</value>
+  </data>
+  <data name="SettingsLanguageDescription" xml:space="preserve">
+    <value>Lingua dell’applicazione. Alcuni testi potrebbero rimanere nella lingua impostata all’avvio finché gli elementi dell’interfaccia associati non vengono ricaricati o il programma non viene riavviato.</value>
+  </data>
+  <data name="SettingsLanguageLabel" xml:space="preserve">
+    <value>Lingua (Language)</value>
+  </data>
+  <data name="SettingsButtonChangePath" xml:space="preserve">
+    <value>Cambia</value>
+  </data>
+  <data name="SettingsTS4FolderDescription" xml:space="preserve">
+    <value>Percorso della cartella “The Sims 4”, che contiene anche la cartella “Mods” in cui sono conservate le tue mod.
+Di solito si trova in:
+Cartella utente -&gt; “Documenti” -&gt; “Electronic Arts” -&gt; “The Sims 4”
+
+A seconda della lingua del gioco, la cartella “The Sims 4” potrebbe essere tradotta.</value>
+  </data>
+  <data name="SettingsTS4FolderLabel" xml:space="preserve">
+    <value>Percorso della cartella “The Sims 4”</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderDescription" xml:space="preserve">
+    <value>La cartella in cui si trova l’installazione di The Sims 4.
+Questa cartella dovrebbe contenere varie sottocartelle, come “Game”, “Data”, e cartelle DLC denominate “EP01”, “GP03” o “SP06”.</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
+    <value>Percorso della cartella The Sims 4</value>
+  </data>
+  <data name="TabIndexFiles" xml:space="preserve">
+    <value>Indice script</value>
+  </data>
+  <data name="TabLeFile" xml:space="preserve">
+    <value>File LE</value>
+  </data>
+  <data name="TabSettings" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontLabel" xml:space="preserve">
+    <value>Porta in primo piano all’apertura automatica</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontDescription" xml:space="preserve">
+    <value>Se questa opzione e “Apri automaticamente i file LE” sono entrambe abilitate, il programma forzerà la propria finestra in primo piano rispetto alle altre applicazioni (incluso The Sims 4) quando apre un file LE.
+Utile se hai un solo monitor.</value>
+  </data>
+  <data name="LeFileTabDataGridOrigin" xml:space="preserve">
+    <value>Origine</value>
+  </data>
+  <data name="LeFileTabDataGridFile" xml:space="preserve">
+    <value>File di script</value>
+  </data>
+  <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
+    <value>Chiamata script</value>
+  </data>
+  <data name="LeFileTabDataGridLine" xml:space="preserve">
+    <value>Riga</value>
+  </data>
+  <data name="GenericDialogueSelectFolder" xml:space="preserve">
+    <value>Seleziona una cartella</value>
+  </data>
+  <data name="IndexFilesEntryLabelType" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="IndexFilesEntryLabelPath" xml:space="preserve">
+    <value>Percorso</value>
+  </data>
+  <data name="IndexFilesEntryLabelContained" xml:space="preserve">
+    <value>Percorsi dei file di script inclusi</value>
+  </data>
+  <data name="SettingsAutoReIndexLabel" xml:space="preserve">
+    <value>Reindicizzazione automatica dei mod</value>
+  </data>
+  <data name="SettingsAutoReIndexDescription" xml:space="preserve">
+    <value>Se abilitato, i tuoi script mod vengono automaticamente reindicizzati quando si verificano modifiche nella cartella Mods. Questo elimina la necessità di reindicizzare manualmente i mod nella pagina “Indice script”.</value>
+  </data>
+  <data name="LeFileTabButtonLoadRecentLes" xml:space="preserve">
+    <value>Carica i file LE disponibili</value>
+  </data>
+  <data name="LeFileTabButtonClearLes" xml:space="preserve">
+    <value>Elimina i file LE disponibili</value>
+  </data>
+  <data name="LeFileTabLabelButtonOperators" xml:space="preserve">
+    <value>Funzioni per l’uso manuale</value>
+  </data>
+  <data name="LeFileTabOriginUnknown" xml:space="preserve">
+    <value>Sconosciuta</value>
+  </data>
+  <data name="LeFileTabOriginTheSims4" xml:space="preserve">
+    <value>The Sims 4</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink2" xml:space="preserve">
+    <value>qui</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink3" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="IndexFilesEntryTypeZipped" xml:space="preserve">
+    <value>File .ts4script o .zip</value>
+  </data>
+  <data name="IndexFilesEntryTypeZippedMultiple" xml:space="preserve">
+    <value>Aggregazione di più file compressi</value>
+  </data>
+  <data name="IndexFilesEntryTypeFolder" xml:space="preserve">
+    <value>Cartella “Scripts” non compressa con script</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
+    <value>Le voci più in basso nello stack di chiamate si sono verificate più vicino all’eccezione.
+Questo non significa che il mod menzionato più in basso sia la causa dell’eccezione, ma solo che lo script di quel mod è stato chiamato più vicino al momento in cui l’eccezione si è verificata.</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
+    <value>Puoi fare doppio clic su una riga per aprire il percorso del mod indicato nella colonna Origine.</value>
+  </data>
+  <data name="DialogueLoadLeContainsNoLEInside" xml:space="preserve">
+    <value>Il file che si è tentato di caricare non conteneva uno stack di chiamate LE valido.
+File: {0}</value>
+  </data>
+  <data name="DialogueLoadLeGeneralError" xml:space="preserve">
+    <value>Errore durante il tentativo di caricare il file LE</value>
+  </data>
+  <data name="DialogueLoadLeNotXML" xml:space="preserve">
+    <value>Il file che si è tentato di caricare non sembra essere un file XML valido e quindi non è un file LE.
+File: {0}
+Errore: {1}</value>
+  </data>
+  <data name="DialogueLoadLeCouldNotLoad" xml:space="preserve">
+    <value>Il file LE che si è tentato di caricare non è stato possibile caricarlo.
+File: {0}
+Errore: {1}</value>
+  </data>
+  <data name="DialogueGeneralError" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="DialogueClearLesError" xml:space="preserve">
+    <value>Uno o più file LE non sono stati rimossi dalla cartella “The Sims 4”. Potresti doverli rimuovere manualmente.
+Aprire ora la cartella “The Sims 4”?</value>
+  </data>
+  <data name="DialogueVerifyPathDoesNotExist" xml:space="preserve">
+    <value>Il percorso fornito sembra non esistere.</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderSubfolderError" xml:space="preserve">
+    <value>Il percorso fornito non sembra essere una directory di installazione del gioco, poiché le sue sottocartelle non corrispondono a quelle previste.</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderNoPythonZips" xml:space="preserve">
+    <value>Il percorso fornito sembra essere una directory di installazione del gioco, ma non sono stati trovati script del gioco base.
+Prova a riparare il gioco tramite l’app EA o a verificare i file di gioco su Steam.</value>
+  </data>
+  <data name="DialogueVerifyTs4DocumentsFolderSubfolderError" xml:space="preserve">
+    <value>Il percorso fornito non sembra essere la directory di “The Sims 4”, poiché non contiene la cartella “Mods” o il file “GameVersion.txt”.</value>
+  </data>
+  <data name="DialogueSettingsFileError" xml:space="preserve">
+    <value>Impossibile leggere il file delle impostazioni.
+Errore: {0}
+
+Interrompere il programma?</value>
+  </data>
+  <data name="DialogueSettingsGeneralError" xml:space="preserve">
+    <value>Errore delle impostazioni</value>
+  </data>
+  <data name="DialogueSettingsPathsNull" xml:space="preserve">
+    <value>Non è stato possibile identificare il percorso della cartella “The Sims 4” e/o il percorso di installazione del gioco.
+Vai alle impostazioni e impostali manualmente.</value>
+  </data>
+</root>

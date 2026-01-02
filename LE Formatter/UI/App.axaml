@@ -1,0 +1,154 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="LE_Formatter.UI.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+        
+        <FluentTheme>
+            <FluentTheme.Resources>
+                <!-- Disables the dumb minimized scrollbars
+                that are supposed to give more room for content,
+                but are just annoying as they switch way too slow -->
+                <x:String x:Key="ScrollBarOverlayMode">Disabled</x:String>
+            </FluentTheme.Resources>
+        </FluentTheme>
+
+        <Style Selector="ScrollViewer">
+            <Setter Property="AllowAutoHide" Value="False"/>
+        </Style>
+
+        <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
+
+        <!-- Nav tabs color-->
+        <Style Selector="TabControl">
+			<Setter Property="Background" Value="{DynamicResource NavTabsColor}"/>
+        </Style>
+        
+        <!-- Nav tabs color selected -->
+        <Style Selector="TabItem:selected">
+            <Setter Property="Background" Value="{DynamicResource NavTabsColorSelected}"/>
+        </Style>
+        <Style Selector="TabItem:selected:pointerover /template/ Border#PART_LayoutRoot">
+            <Setter Property="Background" Value="{DynamicResource NavTabsColorSelected}"/>
+        </Style>
+
+        <!-- LE file tabs, general color -->
+        <Style Selector="TabItem TabControl">
+			<Setter Property="Background" Value="{DynamicResource NavTabsColorSelected}"/>
+        </Style>
+
+        <!-- LE file tabs, selected tab color -->
+        <Style Selector="TabItem TabControl TabItem:selected">
+			<Setter Property="Background" Value="{DynamicResource BackgroundColor}"/>
+        </Style>
+        <Style Selector="TabItem TabControl TabItem:selected:pointerover /template/ Border#PART_LayoutRoot">
+            <Setter Property="Background" Value="{DynamicResource BackgroundColor}"/>
+        </Style>
+        
+        <!-- Disable selected tab strip -->
+        <Style Selector="TabItem:selected /template/ Border#PART_SelectedPipe">
+            <Setter Property="IsVisible" Value="False"/>
+        </Style>
+
+        <!-- LE file tabs, general color -->
+        <Style Selector="TabItem ScrollViewer">
+			<Setter Property="Background" Value="{DynamicResource BackgroundColor}"/>
+        </Style>
+
+        <!-- Fixes that CJK text for whatever reason isn't bold at startup -->
+        <Style Selector="Window">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+        
+        <!-- Make all labels bold -->
+        <Style Selector="Label">
+			<Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style Selector="CheckBox">
+			<Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style Selector="TabControl /template/ ItemsPresenter#PART_ItemsPresenter">
+			<Setter Property="Margin" Value="0"/>
+        </Style>
+
+        <Style Selector="DataGridRow:nth-child(odd)">
+			<Setter Property="Background" Value="{DynamicResource DataGridBackground}"/>
+        </Style>
+
+        <Style Selector="DataGridRow:nth-child(even)">
+			<Setter Property="Background" Value="{DynamicResource DataGridBackgroundAlt}"/>
+        </Style>
+
+        <Style Selector="DataGridRow:pointerover">
+			<Setter Property="Background" Value="{DynamicResource DataGridBackgroundHover}"/>
+        </Style>
+        
+        <Style Selector="DataGridRow:selected">
+            <Setter Property="TextBlock.Foreground" Value="{DynamicResource DataGridSelectedText}"/>
+        </Style>
+        
+        <Style Selector="TextBlock.ClickableTextBox">
+			<Setter Property="Foreground" Value="{DynamicResource HyperlinkBrush}"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style Selector="TextBlock.ClickableTextBox:pointerover">
+            <Setter Property="Opacity" Value="0.65"/>
+        </Style>
+
+        <Style Selector="Button.tabCloseButton">
+            <Setter Property="Opacity" Value="0"/>
+            <Setter Property="Background" Value="{DynamicResource LeTabButtonClose}"/>
+        </Style>
+
+        <Style Selector="Button.tabCloseButton:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource LeTabButtonCloseHover}"/>
+        </Style>
+
+        <Style Selector="TabItem:pointerover Button.tabCloseButton">
+            <Setter Property="Opacity" Value="1"/>
+        </Style>
+
+    </Application.Styles>
+
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <!-- Disables the padding around TabItems -->
+            <Thickness x:Key="TabItemMargin">0</Thickness>
+            <Thickness x:Key="TabControlPadding">0</Thickness>
+
+            <ResourceDictionary.ThemeDictionaries>
+
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="LeTabButtonClose">#f8cfcf</SolidColorBrush>
+                    <SolidColorBrush x:Key="LeTabButtonCloseHover">#f86666</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridBackground">#f8f8f8</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridBackgroundHover">#c8ddf6</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridBackgroundAlt">#e8e8e8</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridSelectedText">#fff</SolidColorBrush>
+                    <SolidColorBrush x:Key="BackgroundColor">#fff</SolidColorBrush>
+                    <SolidColorBrush x:Key="NavTabsColor">#e6e6e6</SolidColorBrush>
+                    <SolidColorBrush x:Key="NavTabsColorSelected">#b9d7e6</SolidColorBrush>
+                    <SolidColorBrush x:Key="HyperlinkBrush">#0066cc</SolidColorBrush>
+                </ResourceDictionary>
+
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="LeTabButtonClose">#3e2020</SolidColorBrush>
+                    <SolidColorBrush x:Key="LeTabButtonCloseHover">#720d0d</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridBackground">#282828</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridBackgroundHover">#202935</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridBackgroundAlt">#181818</SolidColorBrush>
+                    <SolidColorBrush x:Key="DataGridSelectedText">#fff</SolidColorBrush>
+                    <SolidColorBrush x:Key="BackgroundColor">#222</SolidColorBrush>
+                    <SolidColorBrush x:Key="NavTabsColor">#1a1a1a</SolidColorBrush>
+                    <SolidColorBrush x:Key="NavTabsColorSelected">#293940</SolidColorBrush>
+                    <SolidColorBrush x:Key="HyperlinkBrush">#4da3ff</SolidColorBrush>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

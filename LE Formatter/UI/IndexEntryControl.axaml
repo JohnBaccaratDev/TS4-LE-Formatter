@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:lang="clr-namespace:LE_Formatter.lang"
+             xmlns:l10n="clr-namespace:LE_Formatter.Localization"
+             xmlns:local="using:LE_Formatter"
+             x:Class="LE_Formatter.IndexEntryControl"
+             x:DataType="local:indexEntry"
+             Padding="10 5 15 5">
+
+  <Expander VerticalAlignment="Top" Header="{Binding headerText}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+      <StackPanel>
+        <Label Content="{l10n:LocalizationExt IndexFilesEntryLabelType}"/>
+        <TextBlock Text="{Binding typeText}"/>
+          
+        <Label Content="{l10n:LocalizationExt IndexFilesEntryLabelPath}" IsVisible="{Binding uiPathPartVisible}" Padding="0 10 0 0"/>
+        <DockPanel>
+		    <TextBlock Text="{Binding path}" IsVisible="{Binding uiPathPartVisible}" PointerReleased="openPath" Classes="ClickableTextBox" />
+        </DockPanel>
+          
+        <Label Content="{l10n:LocalizationExt IndexFilesEntryLabelContained}" Padding="0 10 0 0"/>
+        <TextBlock Text="{Binding itemsAsStringList}"/>
+
+      </StackPanel>
+  </Expander>
+</UserControl>

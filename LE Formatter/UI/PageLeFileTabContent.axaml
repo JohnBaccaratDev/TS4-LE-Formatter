@@ -1,0 +1,53 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:input="using:Avalonia.Remote.Protocol.Input"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:lang="clr-namespace:LE_Formatter.lang"
+             xmlns:l10n="clr-namespace:LE_Formatter.Localization"
+             xmlns:local="clr-namespace:LE_Formatter"
+             x:Class="LE_Formatter.PageLeFileTabContent"
+             x:CompileBindings="False"
+             FlowDirection="LeftToRight">
+    
+    <ScrollViewer>
+        <StackPanel Margin="10 10 10 10">
+            <Label Content="{l10n:LocalizationExt LeFileTabContentLabelInGameMessage}"/>
+            <SelectableTextBlock Name="LeTextBlockErrorMessage"/>
+
+            <Separator Margin="15"/>
+
+            <Label Content="{l10n:LocalizationExt LeFileTabContentLabelCallStack}"/>
+            
+            <DataGrid Name="LeGridCallStack" 
+                    ItemsSource="{Binding CallStack}"
+                    IsReadOnly="True"
+                    CanUserSortColumns="False"
+                    CanUserResizeColumns="True"
+                    DoubleTapped="cellDoubleTapped">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="{l10n:LocalizationExt LeFileTabDataGridOrigin}" Binding="{Binding Origin}"/>
+                    <DataGridTextColumn Header="{l10n:LocalizationExt LeFileTabDataGridFile}" Binding="{Binding File}" />
+                    <DataGridTextColumn Header="{l10n:LocalizationExt LeFileTabDataGridLine}" Binding="{Binding Line}" />
+                    <DataGridTextColumn Header="{l10n:LocalizationExt LeFileTabDataGridScriptCall}" Binding="{Binding Location}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            
+			<TextBlock Text="{l10n:LocalizationExt LeFileTabContentTextBoxCallStackDescriptionGeneral}"/>
+            <TextBlock TextWrapping="Wrap" Padding="0 0 0 5">
+                <TextBlock Text="{l10n:LocalizationExt LeFileTabContentTextBoxCallStackDescriptionHyperlink1}" />
+                <InlineUIContainer>
+					<HyperlinkButton Content="{l10n:LocalizationExt LeFileTabContentTextBoxCallStackDescriptionHyperlink2}" Margin="0" Padding="0" Click="openWikiQnA"/>
+                </InlineUIContainer>
+			    <TextBlock Text="{l10n:LocalizationExt LeFileTabContentTextBoxCallStackDescriptionHyperlink3}"/>
+            </TextBlock>
+			<TextBlock Text="{l10n:LocalizationExt LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink}"/>
+
+            <Separator Margin="15"/>
+        
+            <Label Content="{l10n:LocalizationExt LeFileTabContentLabelExceptionMessage}"/>
+            <SelectableTextBlock Name="LeTextBlockExceptionMessage"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

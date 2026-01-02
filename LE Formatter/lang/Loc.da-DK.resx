@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IndexFilesButton" xml:space="preserve">
+    <value>Genindeksér mods</value>
+  </data>
+  <data name="IndexFilesButtonLabel" xml:space="preserve">
+    <value>Brug dette, når du tilføjer nye script-mods og ikke har automatisk genindeksering aktiveret.</value>
+  </data>
+  <data name="IndexFilesDescription" xml:space="preserve">
+    <value>Denne side viser stierne til de scriptfiler, som The Sims 4 skal indlæse, opdelt efter deres oprindelse. Nogle scripts vises muligvis ikke her, da de kun kan blive genereret, når spillet kører, eller generelt ikke er tilgængelige uden for spillet.
+
+Bemærk, at selvom nogle af scriptstierne ligner filstier, vil de normalt ikke eksistere på din egen computer. Disse stier er typisk filstierne på det tidspunkt, hvor modderen pakkede moddet.</value>
+  </data>
+  <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
+    <value>Kaldestak</value>
+  </data>
+  <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
+    <value>Script-fejlmeddelelse</value>
+  </data>
+  <data name="LeFileTabContentLabelInGameMessage" xml:space="preserve">
+    <value>Fejlmeddelelse i spillet</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink1" xml:space="preserve">
+    <value>For mere information klik</value>
+  </data>
+  <data name="LeFileTabDragAndDrop" xml:space="preserve">
+    <value>LE-filer kan trækkes og slippes her.</value>
+  </data>
+  <data name="SettingsAutoOpenLatestDescription" xml:space="preserve">
+    <value>Hvis aktiveret åbnes den nyeste LE-fil automatisk, mens programmet kører.
+Alle åbne LE-filer lukkes også, når du starter The Sims 4, så du ikke har gamle LE-filer åbne.</value>
+  </data>
+  <data name="SettingsAutoOpenLatestLabel" xml:space="preserve">
+    <value>Åbn LE-filer automatisk</value>
+  </data>
+  <data name="SettingsLanguageDescription" xml:space="preserve">
+    <value>Programmets sprog. Nogle tekster kan fortsat være på sproget, der var indstillet ved opstart, indtil de tilknyttede brugergrænsefladeelementer genindlæses, eller programmet genstartes.</value>
+  </data>
+  <data name="SettingsLanguageLabel" xml:space="preserve">
+    <value>Sprog (Language)</value>
+  </data>
+  <data name="SettingsButtonChangePath" xml:space="preserve">
+    <value>Skift</value>
+  </data>
+  <data name="SettingsTS4FolderDescription" xml:space="preserve">
+    <value>Stien til din “The Sims 4”-mappe, som også indeholder “Mods”-mappen, hvor dine mods gemmes.
+Findes normalt i:
+Brugermappe -&gt; “Dokumenter” -&gt; “Electronic Arts” -&gt; “The Sims 4”
+
+Afhængigt af dit spilsprog kan “The Sims 4”-mappen være oversat til det pågældende sprog.</value>
+  </data>
+  <data name="SettingsTS4FolderLabel" xml:space="preserve">
+    <value>Sti til “The Sims 4”-mappe</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderDescription" xml:space="preserve">
+    <value>Mappen, hvor din installation af The Sims 4 er placeret.
+Denne mappe bør indeholde forskellige undermapper såsom “Game”, “Data” samt DLC-mapper mærket som “EP01”, “GP03” eller “SP06”.</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
+    <value>Sti til The Sims 4-mappe</value>
+  </data>
+  <data name="TabIndexFiles" xml:space="preserve">
+    <value>Scriptindeks</value>
+  </data>
+  <data name="TabLeFile" xml:space="preserve">
+    <value>LE-filer</value>
+  </data>
+  <data name="TabSettings" xml:space="preserve">
+    <value>Indstillinger</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontLabel" xml:space="preserve">
+    <value>Bring frem ved automatisk åbning</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontDescription" xml:space="preserve">
+    <value>Hvis denne indstilling og “Åbn LE-filer automatisk” begge er aktiveret, vil programmet tvinge sit vindue foran andre programmer (inklusive The Sims 4), når en LE-fil åbnes.
+Nyttigt, hvis du kun har én skærm.</value>
+  </data>
+  <data name="LeFileTabDataGridOrigin" xml:space="preserve">
+    <value>Oprindelse</value>
+  </data>
+  <data name="LeFileTabDataGridFile" xml:space="preserve">
+    <value>Scriptfil</value>
+  </data>
+  <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
+    <value>Scriptkald</value>
+  </data>
+  <data name="LeFileTabDataGridLine" xml:space="preserve">
+    <value>Linje</value>
+  </data>
+  <data name="GenericDialogueSelectFolder" xml:space="preserve">
+    <value>Vælg en mappe</value>
+  </data>
+  <data name="IndexFilesEntryLabelType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IndexFilesEntryLabelPath" xml:space="preserve">
+    <value>Sti</value>
+  </data>
+  <data name="IndexFilesEntryLabelContained" xml:space="preserve">
+    <value>Indeholdte scriptfilstier</value>
+  </data>
+  <data name="SettingsAutoReIndexLabel" xml:space="preserve">
+    <value>Automatisk genindeksering af mods</value>
+  </data>
+  <data name="SettingsAutoReIndexDescription" xml:space="preserve">
+    <value>Hvis aktiveret genindekseres dine script-mods automatisk, når der sker ændringer i din Mods-mappe. Det betyder, at du ikke behøver at genindeksere manuelt på siden "Scriptindeks".</value>
+  </data>
+  <data name="LeFileTabButtonLoadRecentLes" xml:space="preserve">
+    <value>Indlæs tilgængelige LE-filer</value>
+  </data>
+  <data name="LeFileTabButtonClearLes" xml:space="preserve">
+    <value>Slet tilgængelige LE-filer</value>
+  </data>
+  <data name="LeFileTabLabelButtonOperators" xml:space="preserve">
+    <value>Funktioner til manuel betjening</value>
+  </data>
+  <data name="LeFileTabOriginUnknown" xml:space="preserve">
+    <value>Ukendt</value>
+  </data>
+  <data name="LeFileTabOriginTheSims4" xml:space="preserve">
+    <value>The Sims 4</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink2" xml:space="preserve">
+    <value>her</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink3" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="IndexFilesEntryTypeZipped" xml:space="preserve">
+    <value>.ts4script- eller .zip-fil</value>
+  </data>
+  <data name="IndexFilesEntryTypeZippedMultiple" xml:space="preserve">
+    <value>Samling af flere komprimerede filer</value>
+  </data>
+  <data name="IndexFilesEntryTypeFolder" xml:space="preserve">
+    <value>Løs “Scripts”-mappe med scripts</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
+    <value>De nederste elementer i kaldestakken skete tættere på fejlen.
+Det betyder ikke, at det nederst nævnte mod nødvendigvis er årsagen til fejlen. Det betyder kun, at moddens script blev kaldt tættere på tidspunktet for fejlen.</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
+    <value>Du kan dobbeltklikke på en række for at åbne stien til moddet, der er angivet i kolonnen Oprindelse.</value>
+  </data>
+  <data name="DialogueLoadLeContainsNoLEInside" xml:space="preserve">
+    <value>Filen, der blev forsøgt indlæst, indeholdt ikke en gyldig LE-kaldstak.
+Fil: {0}</value>
+  </data>
+  <data name="DialogueLoadLeGeneralError" xml:space="preserve">
+    <value>Fejl ved forsøg på at indlæse LE-fil</value>
+  </data>
+  <data name="DialogueLoadLeNotXML" xml:space="preserve">
+    <value>Filen, der blev forsøgt indlæst, ser ikke ud til at være en gyldig XML-fil og er derfor ikke en LE-fil.
+Fil: {0}
+Fejl: {1}</value>
+  </data>
+  <data name="DialogueLoadLeCouldNotLoad" xml:space="preserve">
+    <value>LE-filen, der blev forsøgt indlæst, kunne ikke indlæses.
+Fil: {0}
+Fejl: {1}</value>
+  </data>
+  <data name="DialogueGeneralError" xml:space="preserve">
+    <value>Fejl</value>
+  </data>
+  <data name="DialogueClearLesError" xml:space="preserve">
+    <value>En eller flere LE-filer kunne ikke fjernes fra din “The Sims 4”-mappe. Du skal muligvis fjerne dem manuelt.
+Åbn “The Sims 4”-mappen nu?</value>
+  </data>
+  <data name="DialogueVerifyPathDoesNotExist" xml:space="preserve">
+    <value>Den angivne sti ser ikke ud til at eksistere.</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderSubfolderError" xml:space="preserve">
+    <value>Den angivne sti ser ikke ud til at være en spilinstallationsmappe, da dens undermapper ikke matcher en sådan.</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderNoPythonZips" xml:space="preserve">
+    <value>Den angivne sti ser ud til at være en spilinstallationsmappe, men der blev ikke fundet nogen scripts til grundspillet.
+Prøv at reparere spillet i EA App eller verificere spilfilerne i Steam.</value>
+  </data>
+  <data name="DialogueVerifyTs4DocumentsFolderSubfolderError" xml:space="preserve">
+    <value>Den angivne sti ligner ikke mappen “The Sims 4”, da den enten ikke indeholder en “Mods”-mappe eller filen “GameVersion.txt”.</value>
+  </data>
+  <data name="DialogueSettingsFileError" xml:space="preserve">
+    <value>Kunne ikke læse indstillingsfilen.
+Fejl: {0}
+
+Afbryd programmet?</value>
+  </data>
+  <data name="DialogueSettingsGeneralError" xml:space="preserve">
+    <value>Indstillingsfejl</value>
+  </data>
+  <data name="DialogueSettingsPathsNull" xml:space="preserve">
+    <value>Stien til din “The Sims 4”-mappe og/eller stien til din spilinstallation kunne ikke identificeres.
+Gå til indstillingerne og angiv dem manuelt.</value>
+  </data>
+</root>

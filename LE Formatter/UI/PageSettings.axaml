@@ -1,0 +1,53 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lang="clr-namespace:LE_Formatter.lang"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:local="using:LE_Formatter"
+             xmlns:l10n="clr-namespace:LE_Formatter.Localization"
+             x:Class="LE_Formatter.PageSettings"
+             x:DataType="local:settingsBridge"
+             >
+
+    <ScrollViewer>
+        <StackPanel Margin="10 10 10 0">
+            
+            <Label Name="SettingLabelLanguage" Content="{l10n:LocalizationExt SettingsLanguageLabel}"/>
+            <ComboBox Name="SettingComboBoxLanguage" SelectionChanged="onLanguageChange"/>
+            <TextBlock Padding="10" TextWrapping="Wrap" Text="{l10n:LocalizationExt SettingsLanguageDescription}"/>
+
+            <Separator Margin="15"></Separator>
+
+            <CheckBox Name="SettingCheckBoxAutoLoadLatest" IsChecked="{Binding autoOpenLatest, Mode=TwoWay}" Content="{l10n:LocalizationExt SettingsAutoOpenLatestLabel}"></CheckBox>
+            <TextBlock Padding="10" TextWrapping="Wrap" Text="{l10n:LocalizationExt SettingsAutoOpenLatestDescription}"/>
+        
+
+            <CheckBox Name="SettingCheckBoxAutoLoadLatestBringToFront" IsChecked="{Binding autoOpenLatestBringToFront, Mode=TwoWay}" Content="{l10n:LocalizationExt SettingsAutoOpenLatestBringToFrontLabel}"></CheckBox>
+            <TextBlock Padding="10" TextWrapping="Wrap" Text="{l10n:LocalizationExt SettingsAutoOpenLatestBringToFrontDescription}"/>
+
+            <Separator Margin="15"></Separator>
+
+            <CheckBox Name="SettingCheckBoxAutoReIndex" IsChecked="{Binding autoReIndex, Mode=TwoWay}" Content="{l10n:LocalizationExt SettingsAutoReIndexLabel}"></CheckBox>
+            <TextBlock Padding="10" TextWrapping="Wrap" Text="{l10n:LocalizationExt SettingsAutoReIndexDescription}"/>
+        
+            <Separator Margin="15"></Separator>
+
+            <Label Content="{l10n:LocalizationExt SettingsTS4FolderLabel}"/>
+            <Grid ColumnDefinitions="Auto,*">
+                <Button Grid.Column="0" Content="{l10n:LocalizationExt SettingsButtonChangePath}" Click="changeTs4FolderPath_Click"/>
+        	    <TextBox Name="SettingTextBoxTs4FolderPath" IsReadOnly="True" Grid.Column="1" Text="{Binding theSimsDocumentsFolderPath}"></TextBox>
+            </Grid>
+            <TextBlock Padding="10" TextWrapping="Wrap" Text="{l10n:LocalizationExt SettingsTS4FolderDescription}"/>
+
+            <Separator Margin="15"></Separator>
+
+            <Label Content="{l10n:LocalizationExt SettingsTS4InstallationFolderLabel}"/>
+            <Grid ColumnDefinitions="Auto,*">
+                <Button Grid.Column="0" Content="{l10n:LocalizationExt SettingsButtonChangePath}"  Click="changeTs4InstallationPath_Click"/>
+        	    <TextBox Name="SettingTextBoxTs4InstallationPath" IsReadOnly="True" Grid.Column="1" Text="{Binding gameInstallFolderPath}"></TextBox>
+            </Grid>
+            <TextBlock Padding="10" TextWrapping="Wrap" Text="{l10n:LocalizationExt SettingsTS4InstallationFolderDescription}"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IndexFilesButton" xml:space="preserve">
+    <value>重新索引模組</value>
+  </data>
+  <data name="IndexFilesButtonLabel" xml:space="preserve">
+    <value>在新增新的腳本模組且未啟用自動重新索引時使用。</value>
+  </data>
+  <data name="IndexFilesDescription" xml:space="preserve">
+    <value>此頁面顯示《模擬市民 4》應載入的腳本檔案路徑，並依其來源分類。某些腳本可能不會顯示於此，因為它們可能只在遊戲執行時產生，或通常無法在遊戲外部存取。
+
+請注意，雖然某些腳本路徑看起來像是本機檔案路徑，但它們通常實際上並不存在於你的電腦上。這些路徑通常是模組作者在封裝模組時的檔案路徑。</value>
+  </data>
+  <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
+    <value>呼叫堆疊</value>
+  </data>
+  <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
+    <value>腳本例外訊息</value>
+  </data>
+  <data name="LeFileTabContentLabelInGameMessage" xml:space="preserve">
+    <value>遊戲內例外訊息</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink1" xml:space="preserve">
+    <value>如需更多資訊，請點擊</value>
+  </data>
+  <data name="LeFileTabDragAndDrop" xml:space="preserve">
+    <value>可以將 LE 檔案拖放到此處。</value>
+  </data>
+  <data name="SettingsAutoOpenLatestDescription" xml:space="preserve">
+    <value>啟用後，程式在執行期間會自動開啟最新的 LE 檔案。
+當你啟動《模擬市民 4》時，所有已開啟的 LE 檔案也會被關閉，以避免開啟舊的 LE。</value>
+  </data>
+  <data name="SettingsAutoOpenLatestLabel" xml:space="preserve">
+    <value>自動開啟 LE 檔案</value>
+  </data>
+  <data name="SettingsLanguageDescription" xml:space="preserve">
+    <value>應用程式語言。在相關的介面元素重新載入或程式重新啟動之前，部分文字可能仍會保持為啟動時設定的語言。</value>
+  </data>
+  <data name="SettingsLanguageLabel" xml:space="preserve">
+    <value>語言 (Language)</value>
+  </data>
+  <data name="SettingsButtonChangePath" xml:space="preserve">
+    <value>變更</value>
+  </data>
+  <data name="SettingsTS4FolderDescription" xml:space="preserve">
+    <value>你的“The Sims 4”資料夾路徑，其中也包含用來存放模組的「Mods」資料夾。
+通常位於：
+使用者資料夾 -&gt; 「文件」 -&gt; 「Electronic Arts」 -&gt; 「The Sims 4」
+
+依據你的遊戲語言，「The Sims 4」資料夾名稱可能會被翻譯成對應語言。</value>
+  </data>
+  <data name="SettingsTS4FolderLabel" xml:space="preserve">
+    <value>“The Sims 4”資料夾路徑</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderDescription" xml:space="preserve">
+    <value>你的《模擬市民 4》遊戲安裝所在的資料夾。
+此資料夾應包含多個子資料夾，例如「Game」、「Data」，以及標記為「EP01」、「GP03」或「SP06」的 DLC 資料夾。</value>
+  </data>
+  <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
+    <value>《模擬市民 4》資料夾路徑</value>
+  </data>
+  <data name="TabIndexFiles" xml:space="preserve">
+    <value>腳本索引</value>
+  </data>
+  <data name="TabLeFile" xml:space="preserve">
+    <value>LE 檔案</value>
+  </data>
+  <data name="TabSettings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontLabel" xml:space="preserve">
+    <value>自動開啟時置於前景</value>
+  </data>
+  <data name="SettingsAutoOpenLatestBringToFrontDescription" xml:space="preserve">
+    <value>如果此選項與「自動開啟 LE 檔案」同時啟用，程式在開啟 LE 檔案時會強制將視窗顯示在其他應用程式（包括《模擬市民 4》）之前。
+如果你只有一個螢幕，這會很有幫助。</value>
+  </data>
+  <data name="LeFileTabDataGridOrigin" xml:space="preserve">
+    <value>來源</value>
+  </data>
+  <data name="LeFileTabDataGridFile" xml:space="preserve">
+    <value>腳本檔案</value>
+  </data>
+  <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
+    <value>腳本呼叫</value>
+  </data>
+  <data name="LeFileTabDataGridLine" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="GenericDialogueSelectFolder" xml:space="preserve">
+    <value>選擇資料夾</value>
+  </data>
+  <data name="IndexFilesEntryLabelType" xml:space="preserve">
+    <value>類型</value>
+  </data>
+  <data name="IndexFilesEntryLabelPath" xml:space="preserve">
+    <value>路徑</value>
+  </data>
+  <data name="IndexFilesEntryLabelContained" xml:space="preserve">
+    <value>包含的腳本檔案路徑</value>
+  </data>
+  <data name="SettingsAutoReIndexLabel" xml:space="preserve">
+    <value>自動重新索引模組</value>
+  </data>
+  <data name="SettingsAutoReIndexDescription" xml:space="preserve">
+    <value>啟用後，當 Mods 資料夾發生變更時，會自動重新索引你的腳本模組。這樣你就不需要在「腳本索引」頁面手動重新索引模組。</value>
+  </data>
+  <data name="LeFileTabButtonLoadRecentLes" xml:space="preserve">
+    <value>載入可用的 LE 檔案</value>
+  </data>
+  <data name="LeFileTabButtonClearLes" xml:space="preserve">
+    <value>刪除可用的 LE 檔案</value>
+  </data>
+  <data name="LeFileTabLabelButtonOperators" xml:space="preserve">
+    <value>手動操作功能</value>
+  </data>
+  <data name="LeFileTabOriginUnknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="LeFileTabOriginTheSims4" xml:space="preserve">
+    <value>模擬市民 4</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink2" xml:space="preserve">
+    <value>這裡</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionHyperlink3" xml:space="preserve">
+    <value>。</value>
+  </data>
+  <data name="IndexFilesEntryTypeZipped" xml:space="preserve">
+    <value>.ts4script 或 .zip 檔案</value>
+  </data>
+  <data name="IndexFilesEntryTypeZippedMultiple" xml:space="preserve">
+    <value>多個壓縮檔案的集合</value>
+  </data>
+  <data name="IndexFilesEntryTypeFolder" xml:space="preserve">
+    <value>位於「Scripts」資料夾中的獨立腳本</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
+    <value>呼叫堆疊中最底部的項目發生在更接近例外的位置。
+這並不代表最底部提到的模組一定是例外的原因，只表示該模組的腳本在例外發生前較接近地被呼叫。</value>
+  </data>
+  <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
+    <value>你可以雙擊某一列以開啟「來源」欄位中所列模組的路徑。</value>
+  </data>
+  <data name="DialogueLoadLeContainsNoLEInside" xml:space="preserve">
+    <value>嘗試載入的檔案不包含有效的 LE 呼叫堆疊。
+檔案：{0}</value>
+  </data>
+  <data name="DialogueLoadLeGeneralError" xml:space="preserve">
+    <value>嘗試載入 LE 檔案時發生錯誤</value>
+  </data>
+  <data name="DialogueLoadLeNotXML" xml:space="preserve">
+    <value>嘗試載入的檔案似乎不是有效的 XML 檔案，因此不是 LE 檔案。
+檔案：{0}
+錯誤：{1}</value>
+  </data>
+  <data name="DialogueLoadLeCouldNotLoad" xml:space="preserve">
+    <value>嘗試載入的 LE 檔案無法載入。
+檔案：{0}
+錯誤：{1}</value>
+  </data>
+  <data name="DialogueGeneralError" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="DialogueClearLesError" xml:space="preserve">
+    <value>一個或多個 LE 檔案無法從「The Sims 4」資料夾中移除。你可能需要手動刪除它們。
+現在開啟「The Sims 4」資料夾嗎？</value>
+  </data>
+  <data name="DialogueVerifyPathDoesNotExist" xml:space="preserve">
+    <value>提供的路徑似乎不存在。</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderSubfolderError" xml:space="preserve">
+    <value>提供的路徑似乎不是遊戲安裝目錄，因為其子資料夾結構不符合遊戲安裝目錄。</value>
+  </data>
+  <data name="DialogueVerifyInstallFolderNoPythonZips" xml:space="preserve">
+    <value>提供的路徑看起來是遊戲安裝目錄，但未找到任何基礎遊戲腳本。
+請嘗試在 EA App 中修復遊戲，或在 Steam 中驗證遊戲檔案。</value>
+  </data>
+  <data name="DialogueVerifyTs4DocumentsFolderSubfolderError" xml:space="preserve">
+    <value>提供的路徑似乎不是「The Sims 4」目錄，因為其中未包含「Mods」資料夾或「GameVersion.txt」檔案。</value>
+  </data>
+  <data name="DialogueSettingsFileError" xml:space="preserve">
+    <value>無法讀取設定檔案。
+錯誤：{0}
+
+中止程式？</value>
+  </data>
+  <data name="DialogueSettingsGeneralError" xml:space="preserve">
+    <value>設定錯誤</value>
+  </data>
+  <data name="DialogueSettingsPathsNull" xml:space="preserve">
+    <value>無法識別你的「The Sims 4」資料夾路徑和／或遊戲安裝路徑。
+請前往設定並手動進行設定。</value>
+  </data>
+</root>

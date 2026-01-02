@@ -1,0 +1,21 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:local="using:LE_Formatter"
+             x:Class="LE_Formatter.LeTabItemHeader"
+             x:DataType="local:LeTabItemHeader">
+    <Grid>
+        <Button Content="Ｘ"
+            HorizontalContentAlignment="Center"
+            Classes="tabCloseButton"
+            Focusable="False"
+            Padding="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            ZIndex="1"
+            Click="removeTab"/>
+        <AccessText Text="{Binding title}"/>
+    </Grid>
+</UserControl>

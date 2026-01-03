@@ -309,4 +309,7 @@ Ukončit program?</value>
     <value>Cestu ke složce „The Sims 4“ a/nebo cestu k instalaci hry se nepodařilo zjistit.
 Přejděte do nastavení a nastavte je ručně.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Tento LE byl převzat ze zprávy MCCC. Tato zpráva neobsahuje herní zprávu o výjimce.</value>
+  </data>
 </root>

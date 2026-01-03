@@ -18,11 +18,30 @@ namespace LE_Formatter
         public static indexEntry vanillaGame = new indexEntry(Localization.ResxLocalizer.Instance["LeFileTabOriginTheSims4"], indexEntry.indexType.multipleZipFiles, null);
         public static List<indexEntry> mods = new List<indexEntry>();
 
+        private static indexEntry? getModsIndexEntryByHash(string hash)
+        {
+            foreach (indexEntry ie in mods)
+            {
+                if (ie.hash.Equals(hash))
+                {
+                    return ie;
+                }
+            }
+            return null;
+        }
+
         static indexEntry indexZip(string path, indexEntry ie=null)
         {
-            if(ie == null)
+            byte[] md5 = MD5.HashData(File.ReadAllBytes(path));
+            string hash = System.Text.Encoding.UTF8.GetString(md5, 0, md5.Length);
+            if (ie == null)
             {
-                ie = new indexEntry(Path.GetFileName(path), indexEntry.indexType.zipFile, MD5.HashData(File.ReadAllBytes(path)).ToString(), path);
+                ie = getModsIndexEntryByHash(hash);
+                if (ie != null) return ie;
+
+                if (ie == null) {
+                    ie = new indexEntry(Path.GetFileName(path), indexEntry.indexType.zipFile, hash, path);
+                }
             }
 
             ZipArchive za = ZipFile.OpenRead(path);
@@ -33,7 +52,8 @@ namespace LE_Formatter
                     byte[] bytes;
                     using (var memoryStream = new MemoryStream())
                     {
-                        entry.Open().CopyTo(memoryStream);
+                        Stream e = entry.Open();
+                        e.CopyTo(memoryStream);
                         bytes = memoryStream.ToArray();
                     }
                     ie.Add(pycGetCompiledFileName(bytes));
@@ -45,12 +65,22 @@ namespace LE_Formatter
 
         static indexEntry? indexScriptsFolder(string path, indexEntry ie = null)
         {
-            string[] files = Directory.GetFiles(path, ".pyc", new EnumerationOptions());
+            string[] files = Directory.GetFiles(path, "*.pyc", SearchOption.AllDirectories);
             if (files.Length < 1) return ie;
 
-            if (ie == null)
+            List<byte> bytesOfFiles = new List<byte>();
+            foreach (string file in files) {
+                bytesOfFiles.AddRange(File.ReadAllBytes(file));
+            }
+
+            byte[] md5 = MD5.HashData(bytesOfFiles.ToArray());
+            string hash = System.Text.Encoding.UTF8.GetString(md5, 0, md5.Length);
+            if(ie == null)
             {
-                ie = new indexEntry(Path.GetFileName(path), indexEntry.indexType.zipFile, null, path);
+                ie = getModsIndexEntryByHash(hash);
+                if (ie != null) return ie;
+
+                ie = new indexEntry(Directory.GetParent(path).Name, indexEntry.indexType.scriptFolder, hash, Directory.GetParent(path).ToString());
             }
 
             foreach(string f in files)
@@ -93,40 +123,45 @@ namespace LE_Formatter
         {
             startPython();
 
+            List<indexEntry> newMods = new List<indexEntry>();
+
             if (Directory.Exists(settings.theSimsDocumentsFolderPath))
             {
-                mods.Clear();
                 string modsFolder = Path.Combine(settings.theSimsDocumentsFolderPath, "Mods");
-                indexModsRecurse(modsFolder, 0);
+                indexModsRecurse(modsFolder, 0, newMods);
             }
+
+            mods.Clear();
+            mods = newMods;
 
             if (takeCareOfPython) stopPython();
         }
 
-        private static void indexModsRecurse(string path, int depth)
+        private static void indexModsRecurse(string path, int depth, List<indexEntry> newMods)
         {
             if (Directory.Exists(path))
             {
                 string[] subPaths = Directory.GetDirectories(path);
                 foreach (string sp in subPaths) {
-                    if(depth < 1) indexModsRecurse(sp, depth + 1);
+                    if(depth < 1) indexModsRecurse(sp, depth + 1, newMods);
 
                     if (sp.EndsWith("Scripts"))
                     {
-
+                        indexEntry ie = indexScriptsFolder(sp);
+                        if (ie.Count > 0) newMods.Add(ie);
                     }
                 }
 
                 foreach (string file in Directory.GetFiles(path, "*.zip"))
                 {
                     indexEntry ie = indexZip(file);
-                    if(ie.Count > 0) mods.Add(ie);
+                    if(ie.Count > 0) newMods.Add(ie);
                 }
 
                 foreach (string file in Directory.GetFiles(path, "*.ts4script"))
                 {
                     indexEntry ie = indexZip(file);
-                    if (ie.Count > 0) mods.Add(ie);
+                    if (ie.Count > 0) newMods.Add(ie);
                 }
 
             }
@@ -225,7 +260,6 @@ namespace LE_Formatter
             }
             else if(path.ToLower().EndsWith(".py") || path.ToLower().EndsWith(".pyc"))
             {
-                // What does TS4 do when having a "Scripts" folder, but 
                 for(int j =  0; j < pathParts.Length && j <= 2; j++)
                 {
                     if (pathParts[j].ToLower().Equals("scripts")) return true;
@@ -267,6 +301,7 @@ namespace LE_Formatter
         public IEnumerable<string> items => this;
 
         private string? _path;
+
         public string path
         {
             get => _path == null ? "" : _path.ToString();

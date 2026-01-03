@@ -2,7 +2,6 @@ using Avalonia.Animation.Easings;
 using Avalonia.Controls;
 using Avalonia.Controls.Presenters;
 using Avalonia.Controls.Primitives;
-using Avalonia.Controls.Shapes;
 using Avalonia.Input;
 using Avalonia.VisualTree;
 using MsBox.Avalonia;
@@ -82,6 +81,19 @@ namespace LE_Formatter
             }
         }
 
+        public bool selectTabFromHash(int hash)
+        {
+            foreach (TabItem tab in this.LeFileTabs.Items)
+            {
+                if (((PageLeFileTabContent)tab.Content).LeHash == hash)
+                {
+                    this.LeFileTabs.SelectedItem = tab;
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public async Task loadLeFile(string path, bool fromAutoOpen = false)
         {
             XmlDocument x = new XmlDocument();
@@ -142,7 +154,6 @@ namespace LE_Formatter
             {
                 foreach (XmlNode descyncdata in xnl)
                 {
-
                     List<string> s = descyncdata.InnerText.Split("\r\n").ToList();
 
                     // Throw out empty lines
@@ -218,22 +229,12 @@ namespace LE_Formatter
                         }
                         s.RemoveAt(i);
                     }
+                    // We now just have the actual call stack.
 
                     // Skip duplicates
                     int hash = (inGameErrorMessage.Trim() + string.Join("", s) + scriptException.Trim()).GetHashCode();
-                    bool skipDesyncdata = false;
-                    foreach (TabItem tab in this.LeFileTabs.Items)
-                    {
-                        if (((PageLeFileTabContent)tab.Content).LeHash == hash)
-                        {
-                            this.LeFileTabs.SelectedItem = tab;
-                            skipDesyncdata = true;
-                            break;
-                        }
-                    }
-                    if (skipDesyncdata) continue;
+                    if (selectTabFromHash(hash)) continue;
 
-                    // We now just have the actual call stack.
                     string header = inGameErrorMessage.PadRight(20).Substring(0, 20) + "... " + dt.ToString("HH:mm:ss");
                     addLeTab(hash, header, inGameErrorMessage, s, scriptException);
 
@@ -255,7 +256,7 @@ namespace LE_Formatter
             }
         }
 
-        private void addLeTab(int hash, string header, string inGameErrorMessage, List<string> stringCallStack, string scriptException)
+        public void addLeTab(int hash, string header, string inGameErrorMessage, List<string> stringCallStack, string scriptException)
         {
             PageLeFileTabContent le = new PageLeFileTabContent();
             le.LeTextBlockErrorMessage.Text = inGameErrorMessage;
@@ -266,8 +267,19 @@ namespace LE_Formatter
             for (int i = 0; i < stringCallStack.Count; i++)
             {
                 string s = stringCallStack[i];
-                string file = s.Substring(s.IndexOf("  File\"") + "  File\"".Length + 2, s.IndexOf("\", line ") - s.IndexOf("  File\"") - "  File\"".Length - 2);
-                s = s.Substring(s.IndexOf("\", line ") + 8);
+                s = s.Substring(s.IndexOf("File ") + "File ".Length);
+                while(s.StartsWith('\'') || s.StartsWith('\"'))
+                {
+                    s = s.Substring(1);
+                }
+
+                string file = s.Substring(0, s.IndexOf(", line "));
+                while (file.EndsWith('\'') || file.EndsWith('\"'))
+                {
+                    file = file.Substring(0, file.Length - 1);
+                }
+
+                s = s.Substring(s.IndexOf(", line ") + ", line ".Length);
 
                 string sLine = s.Substring(0, s.IndexOf(','));
                 s = s.Remove(0, sLine.Length + ", in ".Length);
@@ -312,6 +324,14 @@ namespace LE_Formatter
             {
                 loadLeFile(f);
             }
+
+            if (mcccReportWatcher.isEnabled)
+            {
+                foreach (string f in Directory.EnumerateFiles(Path.Join(settings.theSimsDocumentsFolderPath, "Mods"), "mc_lastexception.html", SearchOption.AllDirectories))
+                {
+                    mcccReportWatcher.loadMcccReport(f);
+                }
+            }
         }
 
         private async void buttonClickedClearLes(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -340,6 +360,20 @@ namespace LE_Formatter
                 if(br.Result == ButtonResult.Yes)
                 {
                     util.openExplorerOnPath(settings.theSimsDocumentsFolderPath);
+                }
+            }
+
+            if (mcccReportWatcher.isEnabled)
+            {
+                foreach (string f in Directory.EnumerateFiles(Path.Join(settings.theSimsDocumentsFolderPath, "Mods"), "mc_lastexception.html", SearchOption.AllDirectories))
+                {
+                    try
+                    {
+                        File.Delete(f);
+                    }
+                    catch
+                    {
+                    }
                 }
             }
         }

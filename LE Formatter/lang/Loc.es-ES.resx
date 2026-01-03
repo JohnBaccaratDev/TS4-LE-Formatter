@@ -309,4 +309,7 @@ Error: {0}
     <value>No se pudo identificar la ruta a tu carpeta «The Sims 4» y/o la ruta a la instalación del juego.
 Ve a la configuración y establécelas manualmente.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Este LE se ha tomado del informe de MCCC. El informe no contiene el mensaje de excepción dentro del juego.</value>
+  </data>
 </root>

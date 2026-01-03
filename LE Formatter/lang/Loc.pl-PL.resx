@@ -309,4 +309,7 @@ Przerwać działanie programu?</value>
     <value>Nie można było zidentyfikować ścieżki do folderu „The Sims 4” i/lub ścieżki do instalacji gry.
 Przejdź do ustawień i ustaw je ręcznie.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Ten LE został pobrany z raportu MCCC. Raport nie zawiera komunikatu wyjątku w grze.</value>
+  </data>
 </root>

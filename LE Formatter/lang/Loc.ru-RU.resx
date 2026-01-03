@@ -309,4 +309,7 @@
     <value>Не удалось определить путь к папке «The Sims 4» и/или путь к установке игры.
 Перейдите в настройки и задайте их вручную.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Этот LE был взят из отчёта MCCC. Отчёт не содержит сообщения об исключении в игре.</value>
+  </data>
 </root>

@@ -309,4 +309,7 @@ Keskeytetäänkö ohjelma?</value>
     <value>“The Sims 4” -kansion polkua ja/tai pelin asennuspolkua ei voitu tunnistaa.
 Siirry asetuksiin ja määritä ne manuaalisesti.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Tämä LE on peräisin MCCC-raportista. Raportti ei sisällä pelin sisäistä poikkeusviestiä.</value>
+  </data>
 </root>

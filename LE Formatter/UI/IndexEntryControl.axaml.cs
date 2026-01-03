@@ -16,7 +16,14 @@ public partial class IndexEntryControl : UserControl
 
     private void openPath(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        util.openExplorerWithSelected(((indexEntry)this.DataContext).path);
+        indexEntry ie = ((indexEntry)this.DataContext);
+
+        switch (ie.type)
+        {
+            case indexEntry.indexType.scriptFolder:
+            case indexEntry.indexType.zipFile:
+                util.openExplorerWithSelected(((indexEntry)this.DataContext).path); break;
+        }
     }
 
     private void openPath(object? sender, Avalonia.Input.PointerReleasedEventArgs e)

@@ -309,4 +309,7 @@ Programm abbrechen?</value>
     <value>Der Pfad zu Ihren "The Sims 4"/"Die Sims 4" Ordner oder Ihren Spieleinstallationsordner konnte nicht automatisch gefunden werden.
 Gehen Sie zu den Einstellungen und setzen Sie diesen manuell.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Dieser LE wurde den MCCC Report entnommen. Dieser enthält keine Spiele Fehlerausnahmenachricht.</value>
+  </data>
 </root>

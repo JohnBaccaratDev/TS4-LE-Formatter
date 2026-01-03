@@ -309,4 +309,7 @@ EA App でゲームを修復するか、Steam でゲームファイルの整合�
     <value>「The Sims 4」フォルダーへのパスおよび／またはゲームのインストール先パスを特定できませんでした。
 設定に移動して手動で設定してください。</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>この LE は MCCC のレポートから取得されたものです。このレポートにはゲーム内の例外メッセージが含まれていません。</value>
+  </data>
 </root>

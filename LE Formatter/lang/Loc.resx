@@ -384,4 +384,7 @@ Abort program?</value>
     <value>The path to your "The Sims 4" folder and/or the path to your game installation could not be identified.
 Go to the settings and set them manually.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>This LE has been taken from MCCC's report. It doesn't contain the in-game exception message.</value>
+  </data>
 </root>

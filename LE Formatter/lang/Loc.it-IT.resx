@@ -309,4 +309,7 @@ Interrompere il programma?</value>
     <value>Non è stato possibile identificare il percorso della cartella “The Sims 4” e/o il percorso di installazione del gioco.
 Vai alle impostazioni e impostali manualmente.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Questo LE è stato estratto dal rapporto di MCCC. Il rapporto non contiene il messaggio di eccezione nel gioco.</value>
+  </data>
 </root>

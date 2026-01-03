@@ -1,3 +1,4 @@
-LE Formatter\bin
-LE Formatter\obj
-LE Formatter\LE Formatter.csproj.user
+.vs
+/LE Formatter/bin
+/LE Formatter/obj
+/LE Formatter/*.csproj.user

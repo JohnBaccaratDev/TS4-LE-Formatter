@@ -32,7 +32,7 @@ namespace LE_Formatter
         }
         public static bool openExplorerWithSelected(string path)
         {
-            if (File.Exists(path))
+            if (File.Exists(path) || Directory.Exists(path))
             {
                 ProcessStartInfo info = new ProcessStartInfo();
                 info.FileName = "explorer";

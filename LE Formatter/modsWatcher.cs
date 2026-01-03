@@ -54,6 +54,8 @@ namespace LE_Formatter
 
         public static void redoIndexingAndCallstackAssociations(object sender, FileSystemEventArgs e)
         {
+            mcccReportWatcher.enableIfNecessary();
+
             Dispatcher.UIThread.Invoke(new Action(() => {
                 pythonIndexing.startIndexing();
             }));

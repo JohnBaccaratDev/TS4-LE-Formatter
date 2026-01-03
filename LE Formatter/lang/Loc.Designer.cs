@@ -587,6 +587,15 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die This LE has been taken from MCCC&apos;s report. It doesn&apos;t contain the in-game exception message. ähnelt.
+        /// </summary>
+        public static string LeFileTabMcccWarning {
+            get {
+                return ResourceManager.GetString("LeFileTabMcccWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die The Sims 4 ähnelt.
         /// </summary>
         public static string LeFileTabOriginTheSims4 {

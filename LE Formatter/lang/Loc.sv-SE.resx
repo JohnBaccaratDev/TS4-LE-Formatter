@@ -309,4 +309,7 @@ Avbryt programmet?</value>
     <value>Sökvägen till din “The Sims 4”-mapp och/eller sökvägen till spelinstallationen kunde inte identifieras.
 Gå till inställningarna och ange dem manuellt.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Denna LE har hämtats från MCCC-rapporten. Rapporten innehåller inte undantagsmeddelandet i spelet.</value>
+  </data>
 </root>

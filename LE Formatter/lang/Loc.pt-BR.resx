@@ -309,4 +309,7 @@ Abortar o programa?</value>
     <value>Não foi possível identificar o caminho da pasta “The Sims 4” e/ou o caminho da instalação do jogo.
 Vá até as configurações e defina-os manualmente.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Este LE foi obtido a partir do relatório do MCCC. O relatório não contém a mensagem de exceção no jogo.</value>
+  </data>
 </root>

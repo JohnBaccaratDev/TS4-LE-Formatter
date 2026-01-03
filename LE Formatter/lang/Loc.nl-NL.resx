@@ -309,4 +309,7 @@ Programma afbreken?</value>
     <value>Het pad naar je map “The Sims 4” en/of het pad naar de spelinstallatie kon niet worden vastgesteld.
 Ga naar de instellingen en stel deze handmatig in.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Deze LE is afkomstig uit het MCCC-rapport. Het rapport bevat geen in-game uitzonderingsbericht.</value>
+  </data>
 </root>

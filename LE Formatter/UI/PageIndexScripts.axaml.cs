@@ -15,10 +15,12 @@ public partial class PageIndexScripts : UserControl
 
     private void reIndexFiles(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
+        this.ButtonReindex.IsEnabled = false;
         indexStackPanel.Children.Clear();
         Dispatcher.UIThread.Post(new Action(() =>
         {
             pythonIndexing.startIndexing(preserveVanillaIndex: true);
+            this.ButtonReindex.IsEnabled = true;
         }));
     }
 }

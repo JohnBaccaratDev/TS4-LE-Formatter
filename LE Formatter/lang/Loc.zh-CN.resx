@@ -309,4 +309,7 @@
     <value>无法识别你的“The Sims 4”文件夹路径和/或游戏安装路径。
 请前往设置并手动进行设置。</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>此 LE 来自 MCCC 的报告。该报告不包含游戏内异常消息。</value>
+  </data>
 </root>

@@ -8,7 +8,7 @@ def pyc_get_compiled_filename(pyc_bytes):
             code_obj = marshal.loads(data[header_size:])
             return code_obj.co_filename
         except Exception:
-            with open("T:\\abc.txt", "a") as f:
+            with open("LE Formatter PythonLog.txt", "w") as f:
                 f.writelines(traceback.format_exc())
             continue
     raise RuntimeError('Unsupported .pyc format or corrupted data')

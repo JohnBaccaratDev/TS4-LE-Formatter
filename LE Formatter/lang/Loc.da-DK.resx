@@ -309,4 +309,7 @@ Afbryd programmet?</value>
     <value>Stien til din “The Sims 4”-mappe og/eller stien til din spilinstallation kunne ikke identificeres.
 Gå til indstillingerne og angiv dem manuelt.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Denne LE er hentet fra MCCC-rapporten. Rapporten indeholder ikke undtagelsesmeddelelsen fra spillet.</value>
+  </data>
 </root>

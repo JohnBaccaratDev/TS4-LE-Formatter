@@ -25,6 +25,10 @@
         <Style Selector="TabControl">
 			<Setter Property="Background" Value="{DynamicResource NavTabsColor}"/>
         </Style>
+
+        <Style Selector="TabControl.LeFileTabs /template/ ItemsPresenter#PART_ItemsPresenter">
+			<Setter Property="MaxHeight" Value="265"/>
+        </Style>
         
         <!-- Nav tabs color selected -->
         <Style Selector="TabItem:selected">

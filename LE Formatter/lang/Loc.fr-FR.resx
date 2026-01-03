@@ -309,4 +309,7 @@ Interrompre le programme ?</value>
     <value>Le chemin vers votre dossier « The Sims 4 » et/ou le chemin vers l’installation du jeu n’ont pas pu être identifiés.
 Accédez aux paramètres et définissez-les manuellement.</value>
   </data>
+  <data name="LeFileTabMcccWarning" xml:space="preserve">
+    <value>Ce LE provient du rapport de MCCC. Le rapport ne contient pas le message d’exception en jeu.</value>
+  </data>
 </root>

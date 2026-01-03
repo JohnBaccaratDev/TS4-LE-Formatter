@@ -16,8 +16,6 @@
     <ApplicationIcon>Assets\Icon.ico</ApplicationIcon>
     <AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>
-    <PublishTrimmed>True</PublishTrimmed>
-    <TrimMode>partial</TrimMode>
     
     <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
   </PropertyGroup>
@@ -66,6 +64,14 @@
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
       <Link>Python\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="python\win-x64\python.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="python\win-x64\python.exe" />
   </ItemGroup>
 
   <ItemGroup>

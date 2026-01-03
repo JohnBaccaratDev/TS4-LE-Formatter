@@ -173,6 +173,7 @@ namespace LE_Formatter
 
                     LeWatcher.setWatchPath(value);
                     modsWatcher.setWatchPath(Path.Join(value, "Mods"));
+                    mcccReportWatcher.setWatchPath(Path.Join(value, "Mods"));
                     pythonIndexing.startIndexing(preserveVanillaIndex:true);
                     PageLeFileTabContent.resetAssociations();
                     writeSettingsFile();

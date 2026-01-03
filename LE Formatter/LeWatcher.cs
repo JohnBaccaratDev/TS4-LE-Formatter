@@ -34,7 +34,6 @@ namespace LE_Formatter
 
         public static void init()
         {
-            Boolean a = true;
             if (watcher != null || settings.theSimsDocumentsFolderPath == null ) return;
 
             watcher = new FileSystemWatcher(settings.theSimsDocumentsFolderPath);

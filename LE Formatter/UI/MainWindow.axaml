@@ -27,7 +27,7 @@
                         </DockPanel>
                     </StackPanel>
                 </StackPanel>
-                <TabControl  Name="LeFileTabs" IsVisible="False"  FlowDirection="RightToLeft" Padding="0" Margin="0" Theme="{StaticResource NoGapTabs}">
+                <TabControl Classes="LeFileTabs" Name="LeFileTabs" IsVisible="False"  FlowDirection="RightToLeft" Padding="0" Margin="0" Theme="{StaticResource NoGapTabs}">
                 </TabControl>
 
             </Panel>

@@ -28,6 +28,7 @@ namespace LE_Formatter
             pythonIndexing.startIndexing();
             LeWatcher.init();
             modsWatcher.init();
+            mcccReportWatcher.init();
             ts4ApplicationWatcher.init();
 
             BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);

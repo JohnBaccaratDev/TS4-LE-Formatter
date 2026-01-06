@@ -174,7 +174,7 @@ V závislosti na jazyce hry může být složka „The Sims 4“ přeložena do 
 Tato složka by měla obsahovat různé podsložky, například „Game“, „Data“, a také složky DLC označené jako „EP01“, „GP03“ nebo „SP06“.</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Cesta ke složce The Sims 4</value>
+    <value>Cesta ke složce instalace The Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Index skriptů</value>
@@ -311,5 +311,14 @@ Přejděte do nastavení a nastavte je ručně.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Tento LE byl převzat ze zprávy MCCC. Tato zpráva neobsahuje herní zprávu o výjimce.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Následující soubor .ts4script nebo .zip může být poškozen.
+Soubor: {0}
+Pokud jste tento soubor právě stahovali, nemusíte se tím znepokojovat. Po dokončení stahování a rozbalení potřebných souborů jen ručně znovu indexujte.
+V opačném případě můžete tento soubor smazat. Tato zpráva se pro tento soubor zobrazí pouze jednou.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

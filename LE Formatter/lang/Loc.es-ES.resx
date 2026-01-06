@@ -174,7 +174,7 @@ Dependiendo del idioma del juego, la carpeta «Los Sims 4» puede estar traducid
 Esta carpeta debe contener varias subcarpetas, como «Game», «Data», así como carpetas de DLC etiquetadas como «EP01», «GP03» o «SP06».</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Ruta de la carpeta Los Sims 4</value>
+    <value>Ruta de la carpeta de instalación de Los Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Índice de scripts</value>
@@ -311,5 +311,14 @@ Ve a la configuración y establécelas manualmente.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Este LE se ha tomado del informe de MCCC. El informe no contiene el mensaje de excepción dentro del juego.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>El siguiente archivo .ts4script o .zip puede estar dañado.
+Archivo: {0}
+Si acabas de descargar este archivo, no deberías preocuparte. Simplemente vuelve a indexar manualmente cuando la descarga haya terminado y hayas extraído los archivos necesarios.
+De lo contrario, quizá quieras eliminar este archivo. Este mensaje solo se mostrará una vez para este archivo.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

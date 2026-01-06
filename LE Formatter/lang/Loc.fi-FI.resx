@@ -174,7 +174,7 @@ Pelisi kielestä riippuen “The Sims 4” -kansion nimi voi olla käännetty.</
 Tämän kansion tulisi sisältää useita alikansioita, kuten “Game”, “Data” sekä DLC-kansiot nimillä “EP01”, “GP03” tai “SP06”.</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>The Sims 4 -kansion polku</value>
+    <value>The Sims 4 -pelin asennuskansion polku</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Skripti-indeksi</value>
@@ -311,5 +311,14 @@ Siirry asetuksiin ja määritä ne manuaalisesti.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Tämä LE on peräisin MCCC-raportista. Raportti ei sisällä pelin sisäistä poikkeusviestiä.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Seuraava .ts4script- tai .zip-tiedosto saattaa olla vioittunut.
+Tiedosto: {0}
+Jos latasit tämän tiedoston juuri äsken, sinun ei tarvitse huolehtia. Indeksoi vain manuaalisesti uudelleen, kun lataus on valmis ja olet purkanut tarvittavat tiedostot.
+Muussa tapauksessa voit halutessasi poistaa tämän tiedoston. Tämä viesti näytetään tälle tiedostolle vain kerran.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

@@ -170,11 +170,11 @@
     <value>“The Sims 4”文件夹路径</value>
   </data>
   <data name="SettingsTS4InstallationFolderDescription" xml:space="preserve">
-    <value>你的《模拟人生 4》游戏安装所在的文件夹。
+    <value>游戏安装所在的文件夹。
 该文件夹应包含多个子文件夹，例如“Game”、“Data”，以及标记为“EP01”、“GP03”或“SP06”的 DLC 文件夹。</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>《模拟人生 4》文件夹路径</value>
+    <value>模拟人生 4 安装文件夹路径</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>脚本索引</value>
@@ -311,5 +311,14 @@
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>此 LE 来自 MCCC 的报告。该报告不包含游戏内异常消息。</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>以下 .ts4script 文件或 .zip 文件可能已损坏。
+文件：{0}
+如果你刚刚在下载此文件，则无需担心。只需在下载完成并解压所需文件后手动重新索引即可。
+否则，你可能需要删除此文件。此消息对该文件只会显示一次。</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

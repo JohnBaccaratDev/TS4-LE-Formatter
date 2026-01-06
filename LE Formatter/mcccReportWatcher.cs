@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Controls.Shapes;
+using Avalonia.Threading;
 using MsBox.Avalonia;
 using System;
 using System.Collections.Generic;
@@ -82,7 +83,7 @@ namespace LE_Formatter
                 catch (XmlException ex)
                 {
                     lastExMessage = ex.Message;
-                    if (!fromAutoOpen)
+                    if (fromAutoOpen)
                     {
                         await MessageBoxManager.GetMessageBoxStandard(
                             lang.Loc.DialogueLoadLeGeneralError,
@@ -102,7 +103,7 @@ namespace LE_Formatter
                     count++;
                     if (count > maxCount)
                     {
-                        if (!fromAutoOpen)
+                        if (fromAutoOpen)
                         {
                             await MessageBoxManager.GetMessageBoxStandard(
                                 lang.Loc.DialogueLoadLeGeneralError,
@@ -251,14 +252,10 @@ namespace LE_Formatter
         {
             if (!File.Exists(e.FullPath)) return;
 
-            loadMcccReport(e.FullPath);
-
-            if (Avalonia.Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopApplication && desktopApplication.MainWindow is MainWindow mw)
+            Dispatcher.UIThread.Invoke(() =>
             {
-                //Dispatcher.UIThread.Invoke(new Action(() => {
-                //    mw.loadLeFile(e.FullPath, fromAutoOpen: true);
-                //}));
-            }
+                loadMcccReport(e.FullPath);
+            });
         }
     }
 }

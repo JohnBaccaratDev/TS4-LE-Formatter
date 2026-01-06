@@ -62,7 +62,16 @@ namespace LE_Formatter
         {
             foreach (var f in e.DataTransfer.TryGetFiles())
             {
-                loadLeFile(f.Path.AbsolutePath.ToString());
+                string fileName = Path.GetFileName(f.Path.AbsolutePath);
+
+                if (fileName.StartsWith("mc_") && fileName.EndsWith(".html"))
+                {
+                    mcccReportWatcher.loadMcccReport(f.Path.AbsolutePath.ToString());
+                }
+                else
+                {
+                    loadLeFile(f.Path.AbsolutePath.ToString());
+                }
             }
         }
 

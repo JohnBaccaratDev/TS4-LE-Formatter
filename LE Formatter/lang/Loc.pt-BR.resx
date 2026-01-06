@@ -174,7 +174,7 @@ Dependendo do idioma do jogo, a pasta “The Sims 4” pode estar traduzida.</va
 Essa pasta deve conter várias subpastas, como “Game”, “Data”, bem como pastas de DLC rotuladas como “EP01”, “GP03” ou “SP06”.</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Caminho da pasta The Sims 4</value>
+    <value>Caminho da pasta de instalação do The Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Índice de scripts</value>
@@ -311,5 +311,14 @@ Vá até as configurações e defina-os manualmente.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Este LE foi obtido a partir do relatório do MCCC. O relatório não contém a mensagem de exceção no jogo.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>O seguinte arquivo .ts4script ou .zip pode estar corrompido.
+Arquivo: {0}
+Se você acabou de baixar este arquivo, não precisa se preocupar. Basta reindexar manualmente depois que o download terminar e você tiver extraído os arquivos necessários.
+Caso contrário, talvez você queira excluir este arquivo. Esta mensagem será exibida apenas uma vez para este arquivo.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

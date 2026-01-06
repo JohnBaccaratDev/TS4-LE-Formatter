@@ -149,7 +149,7 @@ Note, that while some of the script paths may look like file paths, they will us
 All open LE files will also be closed when you start The Sims 4, so you don't have any old LEs open.</value>
   </data>
   <data name="SettingsAutoOpenLatestLabel" xml:space="preserve">
-    <value>Automatically open LE file</value>
+    <value>Automatically open LE files</value>
   </data>
   <data name="SettingsLanguageDescription" xml:space="preserve">
     <value>Application language. Some texts may still be in the language set at startup until the associated UI elements are reloaded or the program is restarted.</value>
@@ -176,7 +176,7 @@ Depending on your in-game language, the "The Sims 4" folder may be translated to
 This folder should contain various subfolders, such as "Game", "Data", as well as folders for DLC labeled like "EP01", "GP03" or "SP06".</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>The Sims 4 Installation Folder</value>
+    <value>The Sims 4 Installation Folder Path</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Script Index</value>
@@ -386,5 +386,15 @@ Go to the settings and set them manually.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>This LE has been taken from MCCC's report. It doesn't contain the in-game exception message.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>The following .ts4script file or .zip file may be corrupt.
+File: {0}
+If you were just downloading this file then you shouldn't have to worry, just manually re-index after your download has finished and you have extracted the necessary files. Otherwise you may wish to delete this file. This message will only be shown once for this file.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value>The following code exception has occured:
+Thread: {0}
+{1}</value>
   </data>
 </root>

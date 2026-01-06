@@ -312,4 +312,16 @@ Gehen Sie zu den Einstellungen und setzen Sie diesen manuell.</value>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Dieser LE wurde den MCCC Report entnommen. Dieser enthält keine Spiele Fehlerausnahmenachricht.</value>
   </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>The following .ts4script file or .zip file may be corrupt.
+File: {0}
+If you were just downloading this file then you shouldn't have to worry, just manually re-index after your download has finished and you have extracted the necessary files. Otherwise you may wish to delete this file. This message will only be shown once for this file.
+
+Die folgende .ts4script oder .zip Datei ist eventuell beschädigt.
+Datei: {0}
+Falls Sie erste gerade herunterladen dann müssen Sie nach dem Download und der Extrahierung manuell neu-indexieren. Ansonsten sollen Sie die Datei löschen. Diese Nachricht wird für diese Datei nicht mehr weiter angezeigt.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
+  </data>
 </root>

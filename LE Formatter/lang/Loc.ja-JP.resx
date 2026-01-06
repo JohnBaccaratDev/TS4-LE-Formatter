@@ -174,7 +174,7 @@
 このフォルダーには、「Game」や「Data」、また「EP01」「GP03」「SP06」などの DLC フォルダーが含まれている必要があります。</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>ザ・シムズ4 フォルダーパス</value>
+    <value>ザ・シムズ4 のインストールフォルダーパス</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>スクリプト索引</value>
@@ -311,5 +311,14 @@ EA App でゲームを修復するか、Steam でゲームファイルの整合�
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>この LE は MCCC のレポートから取得されたものです。このレポートにはゲーム内の例外メッセージが含まれていません。</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>次の .ts4script ファイルまたは .zip ファイルは破損している可能性があります。
+ファイル: {0}
+このファイルをダウンロードしたばかりであれば、心配する必要はありません。ダウンロードが完了し、必要なファイルを展開したら、手動で再インデックスしてください。
+それ以外の場合は、このファイルを削除することを検討してください。このメッセージはこのファイルについて 1 回だけ表示されます。</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

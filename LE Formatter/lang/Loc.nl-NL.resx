@@ -174,7 +174,7 @@ Afhankelijk van de taal van je spel kan de map “De Sims 4” vertaald zijn naa
 Deze map moet verschillende submappen bevatten, zoals “Game”, “Data”, evenals DLC-mappen met namen zoals “EP01”, “GP03” of “SP06”.</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Pad naar De Sims 4-map</value>
+    <value>Pad naar installatiemap van De Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Scriptindex</value>
@@ -311,5 +311,14 @@ Ga naar de instellingen en stel deze handmatig in.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Deze LE is afkomstig uit het MCCC-rapport. Het rapport bevat geen in-game uitzonderingsbericht.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Het volgende .ts4script- of .zip-bestand is mogelijk beschadigd.
+Bestand: {0}
+Als je dit bestand net hebt gedownload, hoef je je geen zorgen te maken. Indexeer handmatig opnieuw zodra de download is voltooid en je de benodigde bestanden hebt uitgepakt.
+Anders kun je dit bestand mogelijk verwijderen. Dit bericht wordt voor dit bestand maar één keer weergegeven.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

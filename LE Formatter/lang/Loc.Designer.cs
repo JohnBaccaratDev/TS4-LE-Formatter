@@ -71,6 +71,28 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The following code exception has occured:
+        ///Thread: {0}
+        ///{1} ähnelt.
+        /// </summary>
+        public static string DialogueCodeException {
+            get {
+                return ResourceManager.GetString("DialogueCodeException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The following .ts4script file or .zip file may be corrupt.
+        ///File: {0}
+        ///If you were just downloading this file then you shouldn&apos;t have to worry, just manually re-index after your download has finished and you have extracted the necessary files. Otherwise you may wish to delete this file. This message will only be shown once for this file. ähnelt.
+        /// </summary>
+        public static string DialogueCorruptZip {
+            get {
+                return ResourceManager.GetString("DialogueCorruptZip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Error ähnelt.
         /// </summary>
         public static string DialogueGeneralError {
@@ -643,7 +665,7 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Automatically open LE file ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Automatically open LE files ähnelt.
         /// </summary>
         public static string SettingsAutoOpenLatestLabel {
             get {
@@ -729,7 +751,7 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die The Sims 4 Installation Folder ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die The Sims 4 Installation Folder Path ähnelt.
         /// </summary>
         public static string SettingsTS4InstallationFolderLabel {
             get {

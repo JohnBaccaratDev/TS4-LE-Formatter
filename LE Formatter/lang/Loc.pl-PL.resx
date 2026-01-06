@@ -174,7 +174,7 @@ W zależności od języka gry folder „The Sims 4” może być przetłumaczony
 Folder ten powinien zawierać różne podfoldery, takie jak „Game”, „Data”, oraz foldery DLC oznaczone jako „EP01”, „GP03” lub „SP06”.</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Ścieżka folderu The Sims 4</value>
+    <value>Ścieżka folderu instalacyjnego The Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Indeks skryptów</value>
@@ -311,5 +311,14 @@ Przejdź do ustawień i ustaw je ręcznie.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Ten LE został pobrany z raportu MCCC. Raport nie zawiera komunikatu wyjątku w grze.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Następujący plik .ts4script lub .zip może być uszkodzony.
+Plik: {0}
+Jeśli dopiero co pobierałeś ten plik, nie musisz się martwić. Po zakończeniu pobierania i wypakowaniu potrzebnych plików po prostu wykonaj ręczne ponowne indeksowanie.
+W przeciwnym razie możesz chcieć usunąć ten plik. Ten komunikat zostanie wyświetlony tylko raz dla tego pliku.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

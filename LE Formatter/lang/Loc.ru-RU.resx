@@ -174,7 +174,7 @@
 Эта папка должна содержать различные подпапки, такие как «Game», «Data», а также папки DLC с названиями «EP01», «GP03» или «SP06».</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Путь к папке The Sims 4</value>
+    <value>Путь к папке установки The Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Индекс скриптов</value>
@@ -311,5 +311,14 @@
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Этот LE был взят из отчёта MCCC. Отчёт не содержит сообщения об исключении в игре.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Следующий файл .ts4script или .zip может быть повреждён.
+Файл: {0}
+Если вы только что скачивали этот файл, беспокоиться не нужно: просто выполните ручную переиндексацию после завершения загрузки и извлечения необходимых файлов.
+В противном случае вы можете удалить этот файл. Это сообщение будет показано для этого файла только один раз.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

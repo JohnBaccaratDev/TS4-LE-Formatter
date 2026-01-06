@@ -174,7 +174,7 @@ Selon la langue de votre jeu, le dossier « Les Sims 4 » peut être traduit dan
 Ce dossier doit contenir plusieurs sous-dossiers, tels que « Game », « Data », ainsi que des dossiers de DLC nommés « EP01 », « GP03 » ou « SP06 ».</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Chemin du dossier Les Sims 4</value>
+    <value>Chemin du dossier d’installation des Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Index des scripts</value>
@@ -311,5 +311,14 @@ Accédez aux paramètres et définissez-les manuellement.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Ce LE provient du rapport de MCCC. Le rapport ne contient pas le message d’exception en jeu.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Le fichier .ts4script ou .zip suivant est peut-être corrompu.
+Fichier : {0}
+Si vous venez de télécharger ce fichier, vous n’avez pas à vous inquiéter : réindexez simplement manuellement une fois le téléchargement terminé et les fichiers nécessaires extraits.
+Sinon, vous pouvez envisager de supprimer ce fichier. Ce message ne s’affichera qu’une seule fois pour ce fichier.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

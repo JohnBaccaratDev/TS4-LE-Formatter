@@ -1,5 +1,6 @@
 ﻿using Avalonia.Controls.ApplicationLifetimes;
 using Metsys.Bson;
+using MsBox.Avalonia;
 using Python.Runtime;
 using System;
 using System.Collections.Generic;
@@ -8,43 +9,114 @@ using System.IO.Compression;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LE_Formatter
 {
+
     public class pythonIndexing
     {
+
         public static indexEntry unknown = new indexEntry(Localization.ResxLocalizer.Instance["LeFileTabOriginUnknown"], indexEntry.indexType.zipFile, null);
         public static indexEntry vanillaGame = new indexEntry(Localization.ResxLocalizer.Instance["LeFileTabOriginTheSims4"], indexEntry.indexType.multipleZipFiles, null);
         public static List<indexEntry> mods = new List<indexEntry>();
+        public static List<string> corruptZips = new List<string>();
 
-        private static indexEntry? getModsIndexEntryByHash(string hash)
+        private static indexEntry? getModsIndexEntryByHash(string hash, string name, string path)
         {
             foreach (indexEntry ie in mods)
             {
                 if (ie.hash.Equals(hash))
                 {
+                    ie.name = name;
+                    ie.path = path;
                     return ie;
                 }
             }
             return null;
         }
 
-        static indexEntry indexZip(string path, indexEntry ie=null)
+        static indexEntry? indexZip(string path, indexEntry ie=null)
         {
             byte[] md5 = MD5.HashData(File.ReadAllBytes(path));
             string hash = System.Text.Encoding.UTF8.GetString(md5, 0, md5.Length);
+            string name = Path.GetFileName(path);
             if (ie == null)
             {
-                ie = getModsIndexEntryByHash(hash);
+                ie = getModsIndexEntryByHash(hash, name, path);
                 if (ie != null) return ie;
 
                 if (ie == null) {
-                    ie = new indexEntry(Path.GetFileName(path), indexEntry.indexType.zipFile, hash, path);
+                    ie = new indexEntry(name, indexEntry.indexType.zipFile, hash, path);
                 }
             }
 
-            ZipArchive za = ZipFile.OpenRead(path);
+            ZipArchive za;
+            for(int i = 0; true; i++)
+            {
+                try
+                {
+                    za = ZipFile.OpenRead(path);
+                    break;
+                }
+                catch (InvalidDataException ex)
+                {
+                    if(i < 10)
+                    {
+                        Thread.Sleep(10);
+                        continue;
+                    }
+
+                    if (!isFileWriteLocked(path))
+                    {
+                        if (!corruptZips.Contains(path))
+                        {
+                            bool hasAccomyingPartFile = false;
+                            bool partFileChangedSizeOrLocked = false;
+
+                            string zipFileName = Path.GetFileNameWithoutExtension(path);
+                            foreach (string f in Directory.GetFiles(Path.GetDirectoryName(path), String.Format("{0}*", zipFileName)))
+                            {
+                                if (f.EndsWith(".part") || f.EndsWith(".crdownload"))
+                                {
+                                    hasAccomyingPartFile = true;
+                                    if (!isFileWriteLocked(f))
+                                    {
+                                        partFileChangedSizeOrLocked = true;
+                                    }
+                                    else
+                                    {
+                                        long size = new System.IO.FileInfo(f).Length;
+
+                                        for (int i2 = 0; i2 < 25; i++)
+                                        {
+                                            Thread.Sleep(20);
+
+                                            if (size != new System.IO.FileInfo(f).Length)
+                                            {
+                                                partFileChangedSizeOrLocked = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            if (hasAccomyingPartFile != partFileChangedSizeOrLocked)
+                            {
+                                corruptZips.Add(path);
+                                MessageBoxManager.GetMessageBoxStandard(
+                                    lang.Loc.DialogueGeneralError,
+                                    String.Format(lang.Loc.DialogueCorruptZip, path),
+                                    MsBox.Avalonia.Enums.ButtonEnum.Ok).ShowAsync();
+                            }
+                        }
+                    }
+
+                    return null;
+                }
+            }
+
             foreach(ZipArchiveEntry entry in za.Entries)
             {
                 if (entry.FullName.EndsWith(".pyc"))
@@ -65,6 +137,7 @@ namespace LE_Formatter
 
         static indexEntry? indexScriptsFolder(string path, indexEntry ie = null)
         {
+            string parentPath = Directory.GetParent(path).ToString();
             string[] files = Directory.GetFiles(path, "*.pyc", SearchOption.AllDirectories);
             if (files.Length < 1) return ie;
 
@@ -75,12 +148,13 @@ namespace LE_Formatter
 
             byte[] md5 = MD5.HashData(bytesOfFiles.ToArray());
             string hash = System.Text.Encoding.UTF8.GetString(md5, 0, md5.Length);
-            if(ie == null)
+            string name = Directory.GetParent(path).Name;
+            if (ie == null)
             {
-                ie = getModsIndexEntryByHash(hash);
+                ie = getModsIndexEntryByHash(hash, name, parentPath);
                 if (ie != null) return ie;
 
-                ie = new indexEntry(Directory.GetParent(path).Name, indexEntry.indexType.scriptFolder, hash, Directory.GetParent(path).ToString());
+                ie = new indexEntry(name, indexEntry.indexType.scriptFolder, hash, parentPath);
             }
 
             foreach(string f in files)
@@ -118,6 +192,20 @@ namespace LE_Formatter
             PythonEngine.Shutdown();
             AppContext.SetSwitch("System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization", false);
         }
+        public static bool isFileWriteLocked(string path)
+        {
+            try
+            {
+                using (FileStream stream = File.Open(path, FileMode.Open, FileAccess.Write))
+                {
+                }
+                return false;
+            }
+            catch (IOException)
+            {
+                return true;
+            }
+        }
 
         private static void indexMods(bool takeCareOfPython = false)
         {
@@ -132,6 +220,7 @@ namespace LE_Formatter
             }
 
             mods.Clear();
+            newMods.Sort((x, y) => x.name.CompareTo(y.name));
             mods = newMods;
 
             if (takeCareOfPython) stopPython();
@@ -148,20 +237,20 @@ namespace LE_Formatter
                     if (sp.EndsWith("Scripts"))
                     {
                         indexEntry ie = indexScriptsFolder(sp);
-                        if (ie.Count > 0) newMods.Add(ie);
+                        if (ie != null && ie.Count > 0) newMods.Add(ie);
                     }
                 }
 
                 foreach (string file in Directory.GetFiles(path, "*.zip"))
                 {
                     indexEntry ie = indexZip(file);
-                    if(ie.Count > 0) newMods.Add(ie);
+                    if(ie != null && ie.Count > 0) newMods.Add(ie);
                 }
 
                 foreach (string file in Directory.GetFiles(path, "*.ts4script"))
                 {
                     indexEntry ie = indexZip(file);
-                    if (ie.Count > 0) newMods.Add(ie);
+                    if (ie != null && ie.Count > 0) newMods.Add(ie);
                 }
 
             }
@@ -200,6 +289,7 @@ namespace LE_Formatter
 
         public static void startIndexing(bool preserveVanillaIndex=false, bool preserveModsIndex=false)
         {
+            if (!settings.triedToReadSettingsFileAndAutoFill) return;
 
             if (!preserveVanillaIndex)
             {
@@ -215,6 +305,9 @@ namespace LE_Formatter
             stopPython();
 
             PageLeFileTabContent.resetAssociations();
+
+            // Otherwise, doesn't free a bunch of stuff for whatever reason on the first indexing for whatever reason
+            GC.Collect();
         }
 
         public static void generateIndexedScriptsPage()

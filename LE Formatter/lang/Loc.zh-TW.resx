@@ -170,11 +170,11 @@
     <value>“The Sims 4”資料夾路徑</value>
   </data>
   <data name="SettingsTS4InstallationFolderDescription" xml:space="preserve">
-    <value>你的《模擬市民 4》遊戲安裝所在的資料夾。
+    <value>遊戲安裝所在的資料夾。
 此資料夾應包含多個子資料夾，例如「Game」、「Data」，以及標記為「EP01」、「GP03」或「SP06」的 DLC 資料夾。</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>《模擬市民 4》資料夾路徑</value>
+    <value>模擬市民 4 安裝資料夾路徑</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>腳本索引</value>
@@ -311,5 +311,14 @@
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>此 LE 來自 MCCC 的報告。該報告不包含遊戲內例外訊息。</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>以下 .ts4script 檔案或 .zip 檔案可能已損壞。
+檔案：{0}
+如果你剛剛在下載此檔案，則無需擔心。只要在下載完成並解壓所需檔案後手動重新索引即可。
+否則，你可能需要刪除此檔案。此訊息對該檔案只會顯示一次。</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

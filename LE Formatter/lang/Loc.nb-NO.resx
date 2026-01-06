@@ -174,7 +174,7 @@ Avhengig av spillspråket ditt kan “The Sims 4”-mappen være oversatt.</valu
 Denne mappen bør inneholde flere undermapper, som “Game”, “Data”, samt DLC-mapper merket “EP01”, “GP03” eller “SP06”.</value>
   </data>
   <data name="SettingsTS4InstallationFolderLabel" xml:space="preserve">
-    <value>Sti til The Sims 4-mappe</value>
+    <value>Sti til installasjonsmappe for The Sims 4</value>
   </data>
   <data name="TabIndexFiles" xml:space="preserve">
     <value>Skriptindeks</value>
@@ -311,5 +311,14 @@ Gå til innstillingene og angi dem manuelt.</value>
   </data>
   <data name="LeFileTabMcccWarning" xml:space="preserve">
     <value>Denne LE-en er hentet fra MCCC-rapporten. Rapporten inneholder ikke unntaksmeldingen i spillet.</value>
+  </data>
+  <data name="DialogueCorruptZip" xml:space="preserve">
+    <value>Følgende .ts4script- eller .zip-fil kan være ødelagt.
+Fil: {0}
+Hvis du nettopp lastet ned denne filen, trenger du ikke å bekymre deg. Bare reindekser manuelt etter at nedlastingen er ferdig og du har pakket ut de nødvendige filene.
+Ellers kan det være lurt å slette denne filen. Denne meldingen vises bare én gang for denne filen.</value>
+  </data>
+  <data name="DialogueCodeException" xml:space="preserve">
+    <value />
   </data>
 </root>

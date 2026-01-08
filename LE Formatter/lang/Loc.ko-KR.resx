@@ -129,7 +129,7 @@
 일부 스크립트 경로는 파일 경로처럼 보일 수 있지만, 실제로는 사용자의 컴퓨터에 존재하지 않는 경우가 대부분입니다. 이러한 경로는 보통 모더가 모드를 패키징할 당시의 파일 경로입니다.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>호출 스택</value>
+    <value>트레이스백</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>스크립트 예외 메시지</value>
@@ -319,6 +319,8 @@ EA 앱에서 게임을 복구하거나 Steam에서 게임 파일 무결성을 �
 그렇지 않다면 이 파일을 삭제하는 것을 고려해 보세요. 이 메시지는 이 파일에 대해 한 번만 표시됩니다.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>다음 코드 예외가 발생했습니다:
+스레드: {0}
+{1}</value>
   </data>
 </root>

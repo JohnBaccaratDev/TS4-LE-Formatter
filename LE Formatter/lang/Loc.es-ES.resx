@@ -129,7 +129,7 @@
 Ten en cuenta que, aunque algunas rutas de scripts parecen rutas de archivos, normalmente no existen realmente en tu computadora. Estas rutas suelen ser las rutas de los archivos en el momento en que el modder empaquetó el mod.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Pila de llamadas</value>
+    <value>Traza de pila</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Mensaje de excepción del script</value>
@@ -319,6 +319,8 @@ Si acabas de descargar este archivo, no deberías preocuparte. Simplemente vuelv
 De lo contrario, quizá quieras eliminar este archivo. Este mensaje solo se mostrará una vez para este archivo.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Se ha producido la siguiente excepción de código:
+Hilo: {0}
+{1}</value>
   </data>
 </root>

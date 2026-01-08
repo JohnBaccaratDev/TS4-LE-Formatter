@@ -129,7 +129,7 @@
 Notez que même si certains chemins de script ressemblent à des chemins de fichiers, ils n’existent généralement pas réellement sur votre ordinateur. Ces chemins correspondent en général aux chemins utilisés par le moddeur lors de l’empaquetage du mod.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Pile d’appels</value>
+    <value>Traceback</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Message d’exception du script</value>
@@ -319,6 +319,8 @@ Si vous venez de télécharger ce fichier, vous n’avez pas à vous inquiéter 
 Sinon, vous pouvez envisager de supprimer ce fichier. Ce message ne s’affichera qu’une seule fois pour ce fichier.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>L’exception de code suivante s’est produite :
+Thread : {0}
+{1}</value>
   </data>
 </root>

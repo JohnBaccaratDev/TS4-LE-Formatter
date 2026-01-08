@@ -129,7 +129,7 @@
 请注意，尽管某些脚本路径看起来像本地文件路径，但它们通常并不实际存在于你的电脑上。这些路径通常是模组作者在打包模组时的文件路径。</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>调用堆栈</value>
+    <value>回溯</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>脚本异常消息</value>
@@ -319,6 +319,8 @@
 否则，你可能需要删除此文件。此消息对该文件只会显示一次。</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>发生了以下代码异常：
+线程：{0}
+{1}</value>
   </data>
 </root>

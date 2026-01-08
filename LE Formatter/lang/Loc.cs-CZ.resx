@@ -129,7 +129,7 @@
 Upozorňujeme, že i když některé cesty ke skriptům vypadají jako cesty k souborům, obvykle ve skutečnosti na vašem počítači neexistují. Tyto cesty obvykle odpovídají cestám k souborům v době, kdy modder balil mod.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Zásobník volání</value>
+    <value>Trasování zásobníku</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Zpráva o výjimce skriptu</value>
@@ -319,6 +319,8 @@ Pokud jste tento soubor právě stahovali, nemusíte se tím znepokojovat. Po do
 V opačném případě můžete tento soubor smazat. Tato zpráva se pro tento soubor zobrazí pouze jednou.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Došlo k následující výjimce kódu:
+Vlákno: {0}
+{1}</value>
   </data>
 </root>

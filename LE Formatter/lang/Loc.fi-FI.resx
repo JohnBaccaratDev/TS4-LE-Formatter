@@ -129,7 +129,7 @@
 Huomaa, että vaikka jotkin skriptipolut näyttävät tiedostopoluilta, ne eivät yleensä ole olemassa omalla tietokoneellasi. Nämä polut ovat yleensä tiedostopolkuja siltä ajalta, kun modaaja pakkasi modin.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Kutsupino</value>
+    <value>Pinojäljitys</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Skriptin poikkeusviesti</value>
@@ -319,6 +319,8 @@ Jos latasit tämän tiedoston juuri äsken, sinun ei tarvitse huolehtia. Indekso
 Muussa tapauksessa voit halutessasi poistaa tämän tiedoston. Tämä viesti näytetään tälle tiedostolle vain kerran.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Seuraava koodipoikkeus on tapahtunut:
+Säie: {0}
+{1}</value>
   </data>
 </root>

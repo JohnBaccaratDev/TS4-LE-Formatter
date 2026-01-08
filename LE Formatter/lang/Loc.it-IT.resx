@@ -129,7 +129,7 @@
 Nota che, anche se alcuni percorsi degli script sembrano percorsi di file, di solito non esistono realmente sul tuo computer. Questi percorsi sono generalmente quelli presenti al momento in cui il modder ha impacchettato la mod.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Stack di chiamate</value>
+    <value>Traceback</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Messaggio di eccezione dello script</value>
@@ -319,6 +319,8 @@ Se hai appena scaricato questo file, non dovresti preoccuparti: reindicizza manu
 Altrimenti, potresti voler eliminare questo file. Questo messaggio verrà mostrato solo una volta per questo file.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Si è verificata la seguente eccezione di codice:
+Thread: {0}
+{1}</value>
   </data>
 </root>

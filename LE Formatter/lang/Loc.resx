@@ -129,7 +129,7 @@
 Note, that while some of the script paths may look like file paths, they will usually not actually exist on your own computer. Usually these paths are the file paths at the time the modder is packaging the mod.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Call Stack</value>
+    <value>Traceback</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Script Exception Message</value>

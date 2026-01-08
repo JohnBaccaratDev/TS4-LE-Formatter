@@ -129,7 +129,7 @@
 Bemærk, at selvom nogle af scriptstierne ligner filstier, vil de normalt ikke eksistere på din egen computer. Disse stier er typisk filstierne på det tidspunkt, hvor modderen pakkede moddet.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Kaldestak</value>
+    <value>Stakspor</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Script-fejlmeddelelse</value>
@@ -319,6 +319,8 @@ Hvis du lige har downloadet denne fil, behøver du ikke bekymre dig. Genindeksé
 Ellers kan du overveje at slette filen. Denne besked vises kun én gang for denne fil.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Følgende kodeundtagelse er opstået:
+Tråd: {0}
+{1}</value>
   </data>
 </root>

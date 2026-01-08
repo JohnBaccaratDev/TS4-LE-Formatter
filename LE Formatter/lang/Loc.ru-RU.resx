@@ -129,7 +129,7 @@
 Обратите внимание: хотя некоторые пути к скриптам выглядят как пути к файлам, обычно они фактически не существуют на вашем компьютере. Как правило, это пути к файлам на момент упаковки мода его автором.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Стек вызовов</value>
+    <value>Трассировка стека</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Сообщение об исключении скрипта</value>
@@ -319,6 +319,8 @@
 В противном случае вы можете удалить этот файл. Это сообщение будет показано для этого файла только один раз.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Произошло следующее исключение кода:
+Поток: {0}
+{1}</value>
   </data>
 </root>

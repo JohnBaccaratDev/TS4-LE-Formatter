@@ -129,7 +129,7 @@
 Let op: hoewel sommige scriptpaden eruitzien als bestandspaden, bestaan ze meestal niet daadwerkelijk op je computer. Deze paden zijn doorgaans de bestandspaden op het moment dat de modder de mod verpakte.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Aanroepstapel</value>
+    <value>Stacktrace</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Script-uitzonderingsbericht</value>
@@ -319,6 +319,8 @@ Als je dit bestand net hebt gedownload, hoef je je geen zorgen te maken. Indexee
 Anders kun je dit bestand mogelijk verwijderen. Dit bericht wordt voor dit bestand maar één keer weergegeven.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>De volgende code-uitzondering is opgetreden:
+Thread: {0}
+{1}</value>
   </data>
 </root>

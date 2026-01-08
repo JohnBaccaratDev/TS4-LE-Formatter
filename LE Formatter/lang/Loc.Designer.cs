@@ -483,7 +483,7 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Call Stack ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Traceback ähnelt.
         /// </summary>
         public static string LeFileTabContentLabelCallStack {
             get {

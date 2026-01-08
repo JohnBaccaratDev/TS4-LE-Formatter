@@ -129,7 +129,7 @@
 請注意，雖然某些腳本路徑看起來像是本機檔案路徑，但它們通常實際上並不存在於你的電腦上。這些路徑通常是模組作者在封裝模組時的檔案路徑。</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>呼叫堆疊</value>
+    <value>回溯</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>腳本例外訊息</value>
@@ -319,6 +319,8 @@
 否則，你可能需要刪除此檔案。此訊息對該檔案只會顯示一次。</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>發生了以下程式碼例外：
+執行緒：{0}
+{1}</value>
   </data>
 </root>

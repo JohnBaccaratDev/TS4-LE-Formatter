@@ -129,7 +129,7 @@
 なお、一部のスクリプトパスはファイルパスのように見えますが、実際にはあなたのコンピューター上に存在しないことがほとんどです。これらのパスは、モッダーがMODをパッケージ化した時点のファイルパスであることが一般的です。</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>コールスタック</value>
+    <value>トレースバック</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>スクリプト例外メッセージ</value>
@@ -319,6 +319,8 @@ EA App でゲームを修復するか、Steam でゲームファイルの整合�
 それ以外の場合は、このファイルを削除することを検討してください。このメッセージはこのファイルについて 1 回だけ表示されます。</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>次のコード例外が発生しました:
+スレッド: {0}
+{1}</value>
   </data>
 </root>

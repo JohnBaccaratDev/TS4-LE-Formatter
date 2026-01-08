@@ -129,7 +129,7 @@
 Auch wenn manche der Skriptdateipfade aussehen wie Ordner- oder Dateipfade, werden diese sehr warhscheinlich nicht auf Ihren Computer existieren. Im Normalfall sind diese Pfade die eigentliche Pfade auf den Computer des Modders während verpacken des Mods.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Aufrufstapel</value>
+    <value>Traceback</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Skript Fehlerausnahmenachricht</value>
@@ -322,6 +322,8 @@ Datei: {0}
 Falls Sie erste gerade herunterladen dann müssen Sie nach dem Download und der Extrahierung manuell neu-indexieren. Ansonsten sollen Sie die Datei löschen. Diese Nachricht wird für diese Datei nicht mehr weiter angezeigt.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Die folgende Code-Ausnahme ist aufgetreten:
+Thread: {0}
+{1}</value>
   </data>
 </root>

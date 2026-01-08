@@ -129,7 +129,7 @@
 Observera att även om vissa skriptsökvägar ser ut som filsökvägar, finns de vanligtvis inte faktiskt på din dator. Dessa sökvägar är oftast filsökvägarna vid den tidpunkt då moddaren paketerade modden.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Anropsstack</value>
+    <value>Stackspårning</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Skriptundantagsmeddelande</value>
@@ -319,6 +319,8 @@ Om du precis laddade ner den här filen behöver du inte oroa dig. Indexera bara
 Annars kan du vilja ta bort den här filen. Det här meddelandet visas bara en gång för den här filen.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Följande kodundantag inträffade:
+Tråd: {0}
+{1}</value>
   </data>
 </root>

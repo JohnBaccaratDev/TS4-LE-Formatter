@@ -129,7 +129,7 @@
 Observe que, embora alguns caminhos de script pareçam caminhos de arquivo, normalmente eles não existem de fato no seu computador. Esses caminhos geralmente correspondem aos caminhos dos arquivos no momento em que o modder empacotou o mod.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Pilha de chamadas</value>
+    <value>Rastreamento de pilha</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Mensagem de exceção do script</value>
@@ -319,6 +319,8 @@ Se você acabou de baixar este arquivo, não precisa se preocupar. Basta reindex
 Caso contrário, talvez você queira excluir este arquivo. Esta mensagem será exibida apenas uma vez para este arquivo.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Ocorreu a seguinte exceção de código:
+Thread: {0}
+{1}</value>
   </data>
 </root>

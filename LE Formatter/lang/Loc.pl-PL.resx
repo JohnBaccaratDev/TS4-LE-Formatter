@@ -129,7 +129,7 @@
 Należy pamiętać, że mimo iż niektóre ścieżki skryptów wyglądają jak ścieżki plików, zazwyczaj nie istnieją one faktycznie na Twoim komputerze. Są to zwykle ścieżki plików z momentu pakowania moda przez twórcę.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Stos wywołań</value>
+    <value>Ślad stosu</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Komunikat wyjątku skryptu</value>
@@ -319,6 +319,8 @@ Jeśli dopiero co pobierałeś ten plik, nie musisz się martwić. Po zakończen
 W przeciwnym razie możesz chcieć usunąć ten plik. Ten komunikat zostanie wyświetlony tylko raz dla tego pliku.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Wystąpił następujący wyjątek kodu:
+Wątek: {0}
+{1}</value>
   </data>
 </root>

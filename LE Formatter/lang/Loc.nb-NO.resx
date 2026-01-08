@@ -129,7 +129,7 @@
 Merk at selv om noen av scriptbanene ser ut som filbaner, vil de vanligvis ikke eksistere på datamaskinen din. Disse banene er som regel filbanene på tidspunktet da modderen pakket modden.</value>
   </data>
   <data name="LeFileTabContentLabelCallStack" xml:space="preserve">
-    <value>Kallstakk</value>
+    <value>Stakkspor</value>
   </data>
   <data name="LeFileTabContentLabelExceptionMessage" xml:space="preserve">
     <value>Skriptunntaksmelding</value>
@@ -319,6 +319,8 @@ Hvis du nettopp lastet ned denne filen, trenger du ikke å bekymre deg. Bare rei
 Ellers kan det være lurt å slette denne filen. Denne meldingen vises bare én gang for denne filen.</value>
   </data>
   <data name="DialogueCodeException" xml:space="preserve">
-    <value />
+    <value>Følgende kodeunntak har oppstått:
+Tråd: {0}
+{1}</value>
   </data>
 </root>

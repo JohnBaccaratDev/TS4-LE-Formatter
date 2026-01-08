@@ -253,8 +253,8 @@ Alla öppna LE-filer stängs också när du startar The Sims 4, så att inga gam
     <value>Lös “Scripts”-mapp med skript</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>De nedersta posterna i anropsstacken inträffade närmare själva undantaget.
-Detta betyder inte att modden som nämns längst ned är orsaken till undantaget, utan endast att dess skript anropades närmare tidpunkten då undantaget inträffade.</value>
+    <value>De nedersta posterna i tracebacken inträffade närmare själva undantaget.
+Detta betyder inte att modden som nämns längst ned måste vara orsaken till undantaget, utan endast att dess skript anropades närmare tidpunkten då undantaget inträffade.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Du kan dubbelklicka på en rad för att öppna sökvägen till modden som listas i kolumnen Ursprung.</value>

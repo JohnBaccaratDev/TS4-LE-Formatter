@@ -253,8 +253,8 @@ Utile si vous n’avez qu’un seul écran.</value>
     <value>Dossier « Scripts » non compressé contenant des scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Les entrées situées en bas de la pile d’appels se sont produites plus près de l’exception.
-Cela ne signifie pas que le mod mentionné en bas est nécessairement la cause de l’exception, mais seulement que le script de ce mod a été appelé plus près du moment où l’exception s’est produite.</value>
+    <value>Les entrées situées en bas du traceback se sont produites plus près de l’exception.
+Cela ne signifie pas que le mod mentionné tout en bas soit la cause de l’exception, mais seulement que le script de ce mod a été appelé plus près du moment où l’exception s’est produite.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Vous pouvez double-cliquer sur une ligne pour ouvrir le chemin vers le mod indiqué dans la colonne Origine.</value>

@@ -519,7 +519,7 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Bottom-most entries of the call stack happened closer to the exception. This doesn&apos;t mean that the bottom-most mentioned mod must be the cause of the exception. It only means that the mod&apos;s script was called closer to when the exception happened. ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bottom-most entries of the traceback happened closer to the exception. This doesn&apos;t mean that the bottom-most mentioned mod must be the cause of the exception. It only means that the mod&apos;s script was called closer to when the exception happened. ähnelt.
         /// </summary>
         public static string LeFileTabContentTextBoxCallStackDescriptionGeneral {
             get {

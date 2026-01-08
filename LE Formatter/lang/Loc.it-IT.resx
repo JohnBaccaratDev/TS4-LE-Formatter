@@ -253,8 +253,8 @@ Utile se hai un solo monitor.</value>
     <value>Cartella “Scripts” non compressa con script</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Le voci più in basso nello stack di chiamate si sono verificate più vicino all’eccezione.
-Questo non significa che il mod menzionato più in basso sia la causa dell’eccezione, ma solo che lo script di quel mod è stato chiamato più vicino al momento in cui l’eccezione si è verificata.</value>
+    <value>Le voci più in basso nel traceback si sono verificate più vicino all’eccezione.
+Questo non significa che il mod menzionato in fondo debba essere la causa dell’eccezione, ma solo che lo script di quel mod è stato chiamato più vicino al momento in cui l’eccezione si è verificata.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Puoi fare doppio clic su una riga per aprire il percorso del mod indicato nella colonna Origine.</value>

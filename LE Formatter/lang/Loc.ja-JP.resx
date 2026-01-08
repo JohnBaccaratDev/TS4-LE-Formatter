@@ -253,8 +253,8 @@
     <value>「Scripts」フォルダー内の単体スクリプト</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>コールスタックの下部にある項目ほど、例外が発生した時点に近いことを示します。
-これは、最下部に表示されている MOD が必ずしも例外の原因であることを意味するものではなく、例外発生直前にその MOD のスクリプトが呼び出されたことを示すだけです。</value>
+    <value>トレースバックの下部にある項目ほど、例外が発生した時点に近いことを示します。
+これは、最下部に記載されている MOD が必ずしも例外の原因であることを意味するものではなく、その MOD のスクリプトが例外発生時点により近いタイミングで呼び出されたことを示すだけです。</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>行をダブルクリックすると、出所 列に表示されている MOD のパスを開くことができます。</value>

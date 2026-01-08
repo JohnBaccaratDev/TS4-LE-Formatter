@@ -253,8 +253,8 @@ Nyttig hvis du bare har én skjerm.</value>
     <value>Løs “Scripts”-mappe med skript</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>De nederste oppføringene i kallstakken skjedde nærmere selve unntaket.
-Dette betyr ikke at modden nederst nødvendigvis er årsaken til unntaket, bare at moddens skript ble kalt nærmere tidspunktet for unntaket.</value>
+    <value>De nederste oppføringene i tracebacken skjedde nærmere selve unntaket.
+Dette betyr ikke at modden som er nevnt nederst må være årsaken til unntaket, bare at moddens skript ble kalt nærmere tidspunktet for unntaket.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Du kan dobbeltklikke på en rad for å åpne stien til modden som er oppført i kolonnen Opprinnelse.</value>

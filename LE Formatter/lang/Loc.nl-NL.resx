@@ -253,8 +253,8 @@ Užitečné, pokud máte pouze jeden monitor.</value>
     <value>Losse “Scripts”-map met scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>De onderste vermeldingen in de aanroepstapel vonden plaats dichter bij de uitzondering.
-Dit betekent niet dat de onderste genoemde mod de oorzaak van de uitzondering is, alleen dat het script van die mod dichter bij het moment van de uitzondering werd aangeroepen.</value>
+    <value>De onderste vermeldingen in de traceback vonden plaats dichter bij de uitzondering.
+Dit betekent niet dat de mod die helemaal onderaan wordt genoemd de oorzaak van de uitzondering moet zijn, maar alleen dat het script van die mod dichter bij het moment van de uitzondering werd aangeroepen.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Je kunt dubbelklikken op een rij om het pad te openen naar de mod die wordt vermeld in de kolom Herkomst.</value>

@@ -253,8 +253,8 @@
     <value>位於「Scripts」資料夾中的獨立腳本</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>呼叫堆疊中最底部的項目發生在更接近例外的位置。
-這並不代表最底部提到的模組一定是例外的原因，只表示該模組的腳本在例外發生前較接近地被呼叫。</value>
+    <value>回溯中最底部的項目發生在更接近例外的時間點。
+這並不代表最底部提到的模組一定是例外的原因，只表示該模組的腳本是在例外發生前更接近的時間被呼叫的。</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>你可以雙擊某一列以開啟「來源」欄位中所列模組的路徑。</value>

@@ -254,7 +254,7 @@ Dadurch müssen Sie dann nicht die Indexierung manuell auf der "Skriptindex" Sei
     <value>Loser "Scripts" Ordner mit scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Die untersten Einträge des Aufrufsstapels sind näher zu der Fehlerausnahmen. Dies bedeutet jedoch nicht, dass der am weitesten unten erwähnte Mod unbedingt der Grund für die Fehlerausnahme ist. Es bedeutet nur, dass der Skriptaufruf dieses Mods näher zum Zeitpunkt der Fehlerausnahme passiert ist.</value>
+    <value>Die untersten Einträge des Tracebacks sind näher zu der Fehlerausnahme. Dies bedeutet jedoch nicht, dass der am weitesten unten erwähnte Mod unbedingt der Grund für die Fehlerausnahme ist. Es bedeutet nur, dass der Skriptaufruf dieses Mods näher zum Zeitpunkt der Fehlerausnahme passiert ist.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Sie können auf eine Zeile Doppelklicken um den Pfad zu öffnen welcher den Mod enthält, welcher in der Urspung-Spalte gelistet ist.</value>

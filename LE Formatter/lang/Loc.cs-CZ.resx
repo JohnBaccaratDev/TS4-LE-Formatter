@@ -253,8 +253,8 @@ Handig als je maar één monitor hebt.</value>
     <value>Volná složka „Scripts“ se skripty</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Nejnižší položky v zásobníku volání nastaly blíže k výjimce.
-To neznamená, že mod uvedený nejníže musí být příčinou výjimky. Znamená to pouze, že skript tohoto modu byl volán blíže k okamžiku výjimky.</value>
+    <value>Záznamy uvedené nejníže v trasování proběhly blíže k okamžiku výjimky.
+To neznamená, že mod zmíněný úplně dole musí být příčinou výjimky. Pouze to znamená, že skript tohoto modu byl volán blíže k okamžiku, kdy k výjimce došlo.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Dvojitým kliknutím na řádek otevřete cestu k modu uvedenému ve sloupci Původ.</value>

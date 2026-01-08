@@ -253,8 +253,8 @@
     <value>位于“Scripts”文件夹中的松散脚本</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>调用堆栈中最底部的条目发生在更接近异常的位置。
-这并不意味着最底部提到的模组一定是异常的原因，只表示该模组的脚本在异常发生前被更接近地调用。</value>
+    <value>回溯中最底部的条目发生在更接近异常的时间点。
+这并不意味着最底部提到的模组一定是异常的原因，只表示该模组的脚本是在异常发生前更接近的时间被调用的。</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>你可以双击某一行以打开“来源”列中所列模组的路径。</value>

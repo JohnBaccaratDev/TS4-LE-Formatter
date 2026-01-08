@@ -253,8 +253,8 @@ Esta carpeta debe contener varias subcarpetas, como «Game», «Data», así com
     <value>Carpeta “Scripts” suelta con scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Las entradas situadas en la parte inferior de la pila de llamadas ocurrieron más cerca de la excepción.
-Esto no significa que el mod mencionado al final sea la causa de la excepción, sino únicamente que el script de ese mod fue llamado más cerca del momento en que ocurrió la excepción.</value>
+    <value>Las entradas situadas en la parte inferior del traceback ocurrieron más cerca de la excepción.
+Esto no significa que el mod mencionado al final deba ser la causa de la excepción, sino únicamente que el script de ese mod fue llamado más cerca del momento en que ocurrió la excepción.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Puedes hacer doble clic en una fila para abrir la ruta del mod que aparece en la columna Origen.</value>

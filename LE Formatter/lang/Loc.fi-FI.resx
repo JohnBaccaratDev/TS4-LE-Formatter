@@ -253,8 +253,8 @@ Hyödyllinen, jos sinulla on vain yksi näyttö.</value>
     <value>Erillinen “Scripts”-kansio skripteillä</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Kutsupinon alimmat merkinnät tapahtuivat lähempänä poikkeusta.
-Tämä ei tarkoita, että alin mainittu modi olisi poikkeuksen syy, vaan ainoastaan sitä, että kyseisen modin skripti kutsuttiin lähempänä poikkeuksen tapahtumahetkeä.</value>
+    <value>Tracebackin alimmat merkinnät tapahtuivat lähempänä poikkeusta.
+Tämä ei tarkoita, että alimmaisena mainittu modi olisi poikkeuksen syy, vaan ainoastaan sitä, että kyseisen modin skripti kutsuttiin lähempänä poikkeuksen tapahtumahetkeä.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Voit kaksoisnapsauttaa riviä avataksesi Alkuperä-sarakkeessa luetellun modin polun.</value>

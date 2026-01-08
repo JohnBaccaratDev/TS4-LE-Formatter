@@ -329,7 +329,7 @@ Useful if you only have a single monitor.</value>
     <value>Loose "Scripts" folder with scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Bottom-most entries of the call stack happened closer to the exception. This doesn't mean that the bottom-most mentioned mod must be the cause of the exception. It only means that the mod's script was called closer to when the exception happened.</value>
+    <value>Bottom-most entries of the traceback happened closer to the exception. This doesn't mean that the bottom-most mentioned mod must be the cause of the exception. It only means that the mod's script was called closer to when the exception happened.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>You can double click on a row to open the path to the mod listed in the Origin column.</value>

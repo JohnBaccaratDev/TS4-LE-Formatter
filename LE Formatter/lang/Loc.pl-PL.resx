@@ -253,8 +253,8 @@ Przydatne, jeśli masz tylko jeden monitor.</value>
     <value>Luźny folder „Scripts” ze skryptami</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>Najniższe wpisy w stosie wywołań wystąpiły bliżej momentu wystąpienia wyjątku.
-Nie oznacza to, że mod wymieniony na dole jest przyczyną wyjątku, a jedynie że skrypt tego moda został wywołany bliżej momentu jego wystąpienia.</value>
+    <value>Najniższe wpisy w tracebacku wystąpiły bliżej momentu wystąpienia wyjątku.
+Nie oznacza to, że mod wymieniony na samym dole musi być przyczyną wyjątku, a jedynie że skrypt tego moda został wywołany bliżej momentu jego wystąpienia.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Możesz dwukrotnie kliknąć wiersz, aby otworzyć ścieżkę do moda wymienionego w kolumnie Pochodzenie.</value>

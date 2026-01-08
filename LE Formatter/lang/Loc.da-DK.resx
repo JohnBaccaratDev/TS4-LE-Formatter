@@ -253,8 +253,8 @@ Nyttigt, hvis du kun har én skærm.</value>
     <value>Løs “Scripts”-mappe med scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>De nederste elementer i kaldestakken skete tættere på fejlen.
-Det betyder ikke, at det nederst nævnte mod nødvendigvis er årsagen til fejlen. Det betyder kun, at moddens script blev kaldt tættere på tidspunktet for fejlen.</value>
+    <value>De nederste poster i tracebacken skete tættere på selve undtagelsen.
+Det betyder ikke, at moddet, der er nævnt nederst, nødvendigvis er årsagen til undtagelsen. Det betyder blot, at moddens script blev kaldt tættere på det tidspunkt, hvor undtagelsen opstod.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">
     <value>Du kan dobbeltklikke på en række for at åbne stien til moddet, der er angivet i kolonnen Oprindelse.</value>

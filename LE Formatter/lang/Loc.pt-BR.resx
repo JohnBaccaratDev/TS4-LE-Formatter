@@ -253,7 +253,7 @@ Essa pasta deve conter várias subpastas, como “Game”, “Data”, bem como 
     <value>Pasta “Scripts” solta com scripts</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionGeneral" xml:space="preserve">
-    <value>As entradas mais abaixo na pilha de chamadas ocorreram mais próximas da exceção.
+    <value>As entradas mais abaixo no traceback ocorreram mais próximas da exceção.
 Isso não significa que o mod mencionado na parte inferior seja a causa da exceção, apenas que o script desse mod foi chamado mais perto do momento em que a exceção ocorreu.</value>
   </data>
   <data name="LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink" xml:space="preserve">

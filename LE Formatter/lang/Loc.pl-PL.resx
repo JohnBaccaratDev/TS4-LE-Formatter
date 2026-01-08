@@ -199,7 +199,7 @@ Przydatne, jeśli masz tylko jeden monitor.</value>
     <value>Plik skryptu</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Wywołanie skryptu</value>
+    <value>Wywołanie funkcji</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Linia</value>

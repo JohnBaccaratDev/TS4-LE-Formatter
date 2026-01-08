@@ -199,7 +199,7 @@ Nyttigt, hvis du kun har én skærm.</value>
     <value>Scriptfil</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Scriptkald</value>
+    <value>Funktionskald</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Linje</value>

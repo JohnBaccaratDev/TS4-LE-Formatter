@@ -199,7 +199,7 @@ Užitečné, pokud máte pouze jeden monitor.</value>
     <value>Scriptbestand</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Scriptaanroep</value>
+    <value>Functieaanroep</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Regel</value>

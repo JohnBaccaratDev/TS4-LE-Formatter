@@ -199,7 +199,7 @@ Alla öppna LE-filer stängs också när du startar The Sims 4, så att inga gam
     <value>Skriptfil</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Skriptanrop</value>
+    <value>Funktionsanrop</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Rad</value>

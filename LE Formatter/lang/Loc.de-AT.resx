@@ -199,7 +199,7 @@ Vor Allem nützlich für Nutzer mit nur einen Bildschirm.</value>
     <value>Skriptdatei</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Skriptaufruf</value>
+    <value>Funktionsaufruf</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Zeile</value>

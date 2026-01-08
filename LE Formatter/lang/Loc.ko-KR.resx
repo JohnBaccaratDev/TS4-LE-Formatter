@@ -199,7 +199,7 @@
     <value>스크립트 파일</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>스크립트 호출</value>
+    <value>함수 호출</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>줄</value>

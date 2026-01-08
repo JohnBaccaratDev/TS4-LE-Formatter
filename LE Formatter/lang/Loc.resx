@@ -201,7 +201,7 @@ Useful if you only have a single monitor.</value>
     <value>Script file</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Script Call</value>
+    <value>Function Call</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Line</value>

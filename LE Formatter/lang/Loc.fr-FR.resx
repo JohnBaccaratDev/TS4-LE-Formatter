@@ -199,7 +199,7 @@ Utile si vous n’avez qu’un seul écran.</value>
     <value>Fichier de script</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Appel de script</value>
+    <value>Appel de fonction</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Ligne</value>

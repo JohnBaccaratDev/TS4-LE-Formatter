@@ -199,7 +199,7 @@ Essa pasta deve conter várias subpastas, como “Game”, “Data”, bem como 
     <value>Arquivo de script</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Chamada de script</value>
+    <value>Chamada de função</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Linha</value>

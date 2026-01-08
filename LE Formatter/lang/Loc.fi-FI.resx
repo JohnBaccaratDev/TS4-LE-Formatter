@@ -199,7 +199,7 @@ Hyödyllinen, jos sinulla on vain yksi näyttö.</value>
     <value>Skriptitiedosto</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Skriptikutsu</value>
+    <value>Funktion kutsu</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Rivi</value>

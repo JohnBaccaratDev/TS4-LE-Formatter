@@ -199,7 +199,7 @@ Handig als je maar één monitor hebt.</value>
     <value>Soubor skriptu</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Volání skriptu</value>
+    <value>Volání funkce</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Řádek</value>

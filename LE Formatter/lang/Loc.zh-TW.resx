@@ -199,7 +199,7 @@
     <value>腳本檔案</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>腳本呼叫</value>
+    <value>函式呼叫</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>行</value>

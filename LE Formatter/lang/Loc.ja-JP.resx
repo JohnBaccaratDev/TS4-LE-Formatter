@@ -199,7 +199,7 @@
     <value>スクリプトファイル</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>スクリプト呼び出し</value>
+    <value>関数呼び出し</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>行</value>

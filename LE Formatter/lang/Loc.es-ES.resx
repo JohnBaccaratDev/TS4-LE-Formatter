@@ -199,7 +199,7 @@ Esta carpeta debe contener varias subcarpetas, como «Game», «Data», así com
     <value>Archivo de script</value>
   </data>
   <data name="LeFileTabDataGridScriptCall" xml:space="preserve">
-    <value>Llamada de script</value>
+    <value>Llamada de función</value>
   </data>
   <data name="LeFileTabDataGridLine" xml:space="preserve">
     <value>Línea</value>

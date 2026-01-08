@@ -582,7 +582,7 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Script Call ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Function Call ähnelt.
         /// </summary>
         public static string LeFileTabDataGridScriptCall {
             get {

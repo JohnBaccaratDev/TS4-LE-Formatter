@@ -323,4 +323,7 @@
 Поток: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Не удалось импортировать сообщение об исключении скрипта из отчёта MCCC.</value>
+  </data>
 </root>

@@ -326,4 +326,7 @@ Falls Sie erste gerade herunterladen dann müssen Sie nach dem Download und der 
 Thread: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Die Skript Fehlerausnahmenachricht konnte nicht aus dem MCCC Bericht importiert werden.</value>
+  </data>
 </root>

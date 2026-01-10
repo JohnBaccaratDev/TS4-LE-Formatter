@@ -609,6 +609,15 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Could not import Script Exception Message from MCCC report. ähnelt.
+        /// </summary>
+        public static string LeFileTabMcccNoScriptExceptionMessage {
+            get {
+                return ResourceManager.GetString("LeFileTabMcccNoScriptExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die This LE has been taken from MCCC&apos;s report. It doesn&apos;t contain the in-game exception message. ähnelt.
         /// </summary>
         public static string LeFileTabMcccWarning {

@@ -165,22 +165,28 @@ namespace LE_Formatter
                         XmlNodeList summaryLines = currSummary.SelectNodes("ul/li");
                         foreach(XmlNode xn2 in summaryLines)
                         {
-                            if (xn2.InnerText.Contains("Error message:  "))
+                            if (xn2.InnerText.Contains("Error message:"))
                             {
                                 scriptException = xn2.InnerText;
-                                scriptException = scriptException.Substring(scriptException.IndexOf("Error message:  ") + "Error message:  ".Length);
+                                scriptException = scriptException.Substring(scriptException.IndexOf("Error message:") + "Error message:".Length);
 
                                 if (scriptException.Contains(", CategoryID"))
                                 {
                                     scriptException = scriptException.Substring(0, scriptException.IndexOf(", CategoryID"));
                                 }
+                                scriptException = scriptException.Trim();
 
-                                while(scriptException.StartsWith('(') && scriptException.EndsWith(')'))
+                                while (scriptException.StartsWith('(') && scriptException.EndsWith(')'))
                                 {
                                     scriptException = scriptException.Substring(1, scriptException.Length - 2);
                                 }
+                                scriptException = scriptException.Trim();
+
                             }
                         }
+
+                        if (scriptException == null) scriptException = lang.Loc.LeFileTabMcccNoScriptExceptionMessage;
+
 
                         XmlNodeList callStackLines = currCallstack.SelectNodes("ul/li");
                         List<string> callstack = new List<string>();
@@ -188,34 +194,15 @@ namespace LE_Formatter
                         {
                             string str = xn2.InnerText;
 
-                            // Try to cut out the stuff that MCCC adds
-                            if (str.EndsWith("]"))
+                            // Note: Trying to just remove [bla[bla]bla] doesn't work, as MCCC cuts off the appended string and adds a single ] at the end
+                            // Meaning you will run into situations where there are an unequal number of '[' and ']'
+                            // So, just cut it off at the first one
+                            if (str.Contains('['))
                             {
-                                int counter = 1;
-                                int i = str.Length - 2;
-                                for (; i > 0; i--)
-                                {
-                                    switch (str[i])
-                                    {
-                                        case ']':
-                                            counter++;
-                                            break;
-
-                                        case '[':
-                                            counter--;
-                                            break;
-                                    }
-
-                                    if (counter == 0) break;
-                                }
-
-                                if(counter == 0)
-                                {
-                                    str = str.Substring(0, i);
-                                }
+                                str = str.Substring(0, str.IndexOf('['));
                             }
 
-                            while(str.StartsWith("\n") || str.StartsWith("\r"))
+                            while (str.StartsWith('\n') || str.StartsWith('\r') || str.StartsWith('\t'))
                             {
                                 str = str.Substring(1);
                             }

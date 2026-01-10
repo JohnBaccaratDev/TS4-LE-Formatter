@@ -323,4 +323,7 @@ Ellers kan du overveje at slette filen. Denne besked vises kun én gang for denn
 Tråd: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Kunne ikke importere script-undtagelsesmeddelelsen fra MCCC-rapporten.</value>
+  </data>
 </root>

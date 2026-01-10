@@ -323,4 +323,7 @@ Annars kan du vilja ta bort den här filen. Det här meddelandet visas bara en g
 Tråd: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Kunde inte importera skriptundantagsmeddelandet från MCCC-rapporten.</value>
+  </data>
 </root>

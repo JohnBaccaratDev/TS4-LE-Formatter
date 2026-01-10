@@ -397,4 +397,7 @@ If you were just downloading this file then you shouldn't have to worry, just ma
 Thread: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Could not import Script Exception Message from MCCC report.</value>
+  </data>
 </root>

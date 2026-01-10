@@ -323,4 +323,7 @@ W przeciwnym razie możesz chcieć usunąć ten plik. Ten komunikat zostanie wy�
 Wątek: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Nie można zaimportować komunikatu wyjątku skryptu z raportu MCCC.</value>
+  </data>
 </root>

@@ -323,4 +323,7 @@ Caso contrário, talvez você queira excluir este arquivo. Esta mensagem será e
 Thread: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Não foi possível importar a mensagem de exceção do script do relatório do MCCC.</value>
+  </data>
 </root>

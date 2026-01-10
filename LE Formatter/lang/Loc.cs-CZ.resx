@@ -323,4 +323,7 @@ V opačném případě můžete tento soubor smazat. Tato zpráva se pro tento s
 Vlákno: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Nepodařilo se importovat zprávu o výjimce skriptu ze zprávy MCCC.</value>
+  </data>
 </root>

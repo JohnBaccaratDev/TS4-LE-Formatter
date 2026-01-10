@@ -323,4 +323,7 @@
 執行緒：{0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>無法從 MCCC 報告中匯入腳本例外訊息。</value>
+  </data>
 </root>

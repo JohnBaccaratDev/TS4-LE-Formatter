@@ -323,4 +323,7 @@ EA App でゲームを修復するか、Steam でゲームファイルの整合�
 スレッド: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>MCCC のレポートからスクリプト例外メッセージをインポートできませんでした。</value>
+  </data>
 </root>

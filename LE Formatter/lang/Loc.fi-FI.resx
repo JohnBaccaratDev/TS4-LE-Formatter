@@ -323,4 +323,7 @@ Muussa tapauksessa voit halutessasi poistaa tämän tiedoston. Tämä viesti nä
 Säie: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>Skriptin poikkeusviestiä ei voitu tuoda MCCC-raportista.</value>
+  </data>
 </root>

@@ -323,4 +323,7 @@ De lo contrario, quizá quieras eliminar este archivo. Este mensaje solo se most
 Hilo: {0}
 {1}</value>
   </data>
+  <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
+    <value>No se pudo importar el mensaje de excepción del script desde el informe de MCCC.</value>
+  </data>
 </root>

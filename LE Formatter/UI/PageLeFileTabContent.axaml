@@ -14,7 +14,7 @@
     <ScrollViewer>
         <StackPanel Margin="10 10 10 10">
             <Label Content="{l10n:LocalizationExt LeFileTabContentLabelInGameMessage}"/>
-            <SelectableTextBlock Name="LeTextBlockErrorMessage"/>
+            <SelectableTextBlock Name="LeTextBlockErrorMessage" TextWrapping="Wrap"/>
 
             <Separator Margin="15"/>
 
@@ -47,7 +47,7 @@
             <Separator Margin="15"/>
         
             <Label Content="{l10n:LocalizationExt LeFileTabContentLabelExceptionMessage}"/>
-            <SelectableTextBlock Name="LeTextBlockExceptionMessage"/>
+            <SelectableTextBlock Name="LeTextBlockExceptionMessage" TextWrapping="Wrap" />
         </StackPanel>
     </ScrollViewer>
 </UserControl>

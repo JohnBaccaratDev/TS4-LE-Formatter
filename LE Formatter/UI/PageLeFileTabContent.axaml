@@ -13,6 +13,11 @@
     
     <ScrollViewer>
         <StackPanel Margin="10 10 10 10">
+            <Label Content="{l10n:LocalizationExt LeFileTabContentLabelLeFilePath}"/>
+            <TextBlock PointerPressed="openLePath" Classes="ClickableTextBox" TextWrapping="Wrap" Text="{Binding path}"/>
+
+            <Separator Margin="15" />
+
             <Label Content="{l10n:LocalizationExt LeFileTabContentLabelInGameMessage}"/>
             <SelectableTextBlock Name="LeTextBlockErrorMessage" TextWrapping="Wrap"/>
 

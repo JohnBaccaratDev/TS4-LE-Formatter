@@ -326,4 +326,7 @@ Säie: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Skriptin poikkeusviestiä ei voitu tuoda MCCC-raportista.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>LE-tiedoston polku</value>
+  </data>
 </root>

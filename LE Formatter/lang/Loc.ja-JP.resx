@@ -326,4 +326,7 @@ EA App でゲームを修復するか、Steam でゲームファイルの整合�
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>MCCC のレポートからスクリプト例外メッセージをインポートできませんでした。</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>LE ファイルのパス</value>
+  </data>
 </root>

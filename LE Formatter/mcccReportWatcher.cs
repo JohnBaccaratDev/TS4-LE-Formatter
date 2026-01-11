@@ -221,9 +221,9 @@ namespace LE_Formatter
                             int hash = (inGameErrorMessage.Trim() + string.Join("", callstack) + scriptException.Trim()).GetHashCode();
                             if (Avalonia.Application.Current != null && Avalonia.Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopApplication && desktopApplication.MainWindow is MainWindow mw)
                             {
-                                if (!mw.selectTabFromHash(hash))
+                                if (!mw.selectTabFromHash(hash, path))
                                 {
-                                    mw.addLeTab(hash, String.Format("[MCCC] {0}", title), inGameErrorMessage, callstack, scriptException);
+                                    mw.addLeTab(hash, String.Format("[MCCC] {0}", title), inGameErrorMessage, callstack, scriptException, path);
                                 }
                             }
                         }

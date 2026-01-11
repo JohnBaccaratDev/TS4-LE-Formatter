@@ -329,4 +329,7 @@ Thread: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Die Skript Fehlerausnahmenachricht konnte nicht aus dem MCCC Bericht importiert werden.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>LE Dateipfad</value>
+  </data>
 </root>

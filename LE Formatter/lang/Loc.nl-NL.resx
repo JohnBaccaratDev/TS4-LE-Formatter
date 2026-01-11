@@ -326,4 +326,7 @@ Thread: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Kon het script-uitzonderingsbericht niet importeren uit het MCCC-rapport.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Pad naar LE-bestand</value>
+  </data>
 </root>

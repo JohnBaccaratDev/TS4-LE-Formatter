@@ -326,4 +326,7 @@ EA 앱에서 게임을 복구하거나 Steam에서 게임 파일 무결성을 �
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>MCCC 보고서에서 스크립트 예외 메시지를 가져올 수 없습니다.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>LE 파일 경로</value>
+  </data>
 </root>

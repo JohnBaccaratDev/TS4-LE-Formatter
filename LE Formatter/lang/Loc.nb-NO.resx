@@ -326,4 +326,7 @@ Tråd: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Kunne ikke importere skriptunntaksmeldingen fra MCCC-rapporten.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Sti til LE-fil</value>
+  </data>
 </root>

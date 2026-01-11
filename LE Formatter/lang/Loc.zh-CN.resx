@@ -326,4 +326,7 @@
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>无法从 MCCC 报告中导入脚本异常消息。</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>LE 文件路径</value>
+  </data>
 </root>

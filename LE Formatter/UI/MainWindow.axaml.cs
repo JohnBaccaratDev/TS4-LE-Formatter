@@ -66,11 +66,11 @@ namespace LE_Formatter
 
                 if (fileName.StartsWith("mc_") && fileName.EndsWith(".html"))
                 {
-                    mcccReportWatcher.loadMcccReport(f.Path.AbsolutePath.ToString());
+                    mcccReportWatcher.loadMcccReport(f.Path.LocalPath.ToString());
                 }
                 else
                 {
-                    loadLeFile(f.Path.AbsolutePath.ToString());
+                    loadLeFile(f.Path.LocalPath.ToString());
                 }
             }
         }
@@ -90,12 +90,13 @@ namespace LE_Formatter
             }
         }
 
-        public bool selectTabFromHash(int hash)
+        public bool selectTabFromHash(int hash, string filePath)
         {
             foreach (TabItem tab in this.LeFileTabs.Items)
             {
                 if (((PageLeFileTabContent)tab.Content).LeHash == hash)
                 {
+                    ((PageLeFileTabContent)tab.Content).path = filePath;
                     this.LeFileTabs.SelectedItem = tab;
                     return true;
                 }
@@ -242,10 +243,10 @@ namespace LE_Formatter
 
                     // Skip duplicates
                     int hash = (inGameErrorMessage.Trim() + string.Join("", s) + scriptException.Trim()).GetHashCode();
-                    if (selectTabFromHash(hash)) continue;
+                    if (selectTabFromHash(hash, path)) continue;
 
                     string header = inGameErrorMessage.PadRight(20).Substring(0, 20) + "... " + dt.ToString("HH:mm:ss");
-                    addLeTab(hash, header, inGameErrorMessage, s, scriptException);
+                    addLeTab(hash, header, inGameErrorMessage, s, scriptException, path);
 
                     if (fromAutoOpen && settings.autoOpenLatestBringToFront)
                     {
@@ -265,12 +266,13 @@ namespace LE_Formatter
             }
         }
 
-        public void addLeTab(int hash, string header, string inGameErrorMessage, List<string> stringCallStack, string scriptException)
+        public void addLeTab(int hash, string header, string inGameErrorMessage, List<string> stringCallStack, string scriptException, string filePath)
         {
             PageLeFileTabContent le = new PageLeFileTabContent();
             le.LeTextBlockErrorMessage.Text = inGameErrorMessage;
             le.LeTextBlockExceptionMessage.Text = scriptException;
             le.LeHash = hash;
+            le.path = filePath;
 
             List<LeCallStackEntry> cs = new List<LeCallStackEntry>();
             for (int i = 0; i < stringCallStack.Count; i++)

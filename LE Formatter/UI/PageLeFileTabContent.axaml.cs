@@ -3,17 +3,25 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
+using DialogHostAvalonia.Utilities;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LE_Formatter;
 
 public partial class PageLeFileTabContent : UserControl
 {
+    public static readonly StyledProperty<string?> _path = AvaloniaProperty.Register<PageLeFileTabContent, string?>(nameof(path));
+
     public ObservableCollection<LeCallStackEntry> CallStack { get; } = new();
 
     public int LeHash;
+    public string? path {
+        get => GetValue(_path);
+        set => SetValue(_path, value);
+    }
 
     private ulong? lastClickedTimestamp = null;
 
@@ -63,5 +71,13 @@ public partial class PageLeFileTabContent : UserControl
     private void openWikiQnA(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         util.openBrowserOnPage("https://github.com/JohnBaccaratDev/TS4-LE-Formatter/wiki/Question-&-Answers");
+    }
+
+    private void openLePath(object? sender, Avalonia.Input.PointerPressedEventArgs e)
+    {
+        if (e.Properties.IsLeftButtonPressed)
+        {
+            util.openExplorerWithSelected(this.path.ToString());
+        }
     }
 }

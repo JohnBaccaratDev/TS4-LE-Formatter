@@ -326,4 +326,7 @@ Vlákno: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Nepodařilo se importovat zprávu o výjimce skriptu ze zprávy MCCC.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Cesta k souboru LE</value>
+  </data>
 </root>

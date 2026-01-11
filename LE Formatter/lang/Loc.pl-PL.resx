@@ -326,4 +326,7 @@ Wątek: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Nie można zaimportować komunikatu wyjątku skryptu z raportu MCCC.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Ścieżka pliku LE</value>
+  </data>
 </root>

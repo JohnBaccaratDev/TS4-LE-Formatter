@@ -510,6 +510,15 @@ namespace LE_Formatter.lang {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die LE File Path ähnelt.
+        /// </summary>
+        public static string LeFileTabContentLabelLeFilePath {
+            get {
+                return ResourceManager.GetString("LeFileTabContentLabelLeFilePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die You can double click on a row to open the path to the mod listed in the Origin column. ähnelt.
         /// </summary>
         public static string LeFileTabContentTextBoxCallStackDescriptionAfterHyperlink {

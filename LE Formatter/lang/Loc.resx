@@ -400,4 +400,7 @@ Thread: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Could not import Script Exception Message from MCCC report.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>LE File Path</value>
+  </data>
 </root>

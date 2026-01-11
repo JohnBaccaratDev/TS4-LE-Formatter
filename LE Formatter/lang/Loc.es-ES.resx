@@ -326,4 +326,7 @@ Hilo: {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>No se pudo importar el mensaje de excepción del script desde el informe de MCCC.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Ruta del archivo LE</value>
+  </data>
 </root>

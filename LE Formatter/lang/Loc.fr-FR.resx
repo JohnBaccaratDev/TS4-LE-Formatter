@@ -326,4 +326,7 @@ Thread : {0}
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Impossible d’importer le message d’exception du script depuis le rapport MCCC.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Chemin du fichier LE</value>
+  </data>
 </root>

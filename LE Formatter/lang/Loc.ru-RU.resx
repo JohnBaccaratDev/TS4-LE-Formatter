@@ -326,4 +326,7 @@
   <data name="LeFileTabMcccNoScriptExceptionMessage" xml:space="preserve">
     <value>Не удалось импортировать сообщение об исключении скрипта из отчёта MCCC.</value>
   </data>
+  <data name="LeFileTabContentLabelLeFilePath" xml:space="preserve">
+    <value>Путь к файлу LE</value>
+  </data>
 </root>

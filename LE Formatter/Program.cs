@@ -68,6 +68,15 @@ namespace LE_Formatter {
                 .WithInterFont()
                 .LogToTrace();
 
+        public static void logString(string message)
+        {
+            using (var fw = File.AppendText(logFile))
+            {
+                fw.WriteLine(DateTime.Now.ToString());
+                fw.WriteLine(message);
+                fw.WriteLine();
+            }
+        }
 
         public static void logException(Exception ex, string threadInfo=null)
         {

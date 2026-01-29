@@ -23,6 +23,8 @@ namespace LE_Formatter
         public static List<indexEntry> mods = new List<indexEntry>();
         public static List<string> corruptZips = new List<string>();
 
+        public static List<string> nonIndexablePycFiles = new List<string>();
+
         private static indexEntry? getModsIndexEntryByHash(string hash, string name, string path)
         {
             foreach (indexEntry ie in mods)
@@ -121,6 +123,9 @@ namespace LE_Formatter
             {
                 if (entry.FullName.EndsWith(".pyc"))
                 {
+                    string exceptionString = String.Format("{0} : {1}", path, entry.FullName);
+                    if (nonIndexablePycFiles.Contains(exceptionString)) continue;
+
                     byte[] bytes;
                     using (var memoryStream = new MemoryStream())
                     {
@@ -128,7 +133,17 @@ namespace LE_Formatter
                         e.CopyTo(memoryStream);
                         bytes = memoryStream.ToArray();
                     }
-                    ie.Add(pycGetCompiledFileName(bytes));
+
+                    try
+                    {
+                        ie.Add(pycGetCompiledFileName(bytes));
+                    }
+                    catch (Exception ex)
+                    {
+                        nonIndexablePycFiles.Add(exceptionString);
+                        Program.logString(String.Format("The following compiled Python file could not be indexed \"{0}\"", exceptionString));
+                        Program.logException(ex);
+                    }
                 }
             }
 
@@ -159,7 +174,19 @@ namespace LE_Formatter
 
             foreach(string f in files)
             {
-                ie.Add(pycGetCompiledFileName(File.ReadAllBytes(f)));
+                if (nonIndexablePycFiles.Contains(f)) continue;
+
+                try
+                {
+                    ie.Add(pycGetCompiledFileName(File.ReadAllBytes(f)));
+                }
+                catch (Exception ex)
+                {
+                    nonIndexablePycFiles.Add(f);
+                    Program.logString(String.Format("The following compiled Python file could not be indexed \"{0}\"", f));
+                    Program.logException(ex);
+                }
+
             }
 
             return ie;

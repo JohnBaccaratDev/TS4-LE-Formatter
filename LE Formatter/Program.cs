@@ -70,29 +70,61 @@ namespace LE_Formatter {
 
         public static void logString(string message)
         {
+            message = message.Replace("\r", "");
+
             using (var fw = File.AppendText(logFile))
             {
-                fw.WriteLine(DateTime.Now.ToString());
-                fw.WriteLine(message);
-                fw.WriteLine();
+                string dts = DateTime.Now.ToString() + " - ";
+
+                fw.Write(dts);
+                bool first = true;
+                foreach (string line in message.Split('\n'))
+                {
+                    string temp = line;
+                    if (!first)
+                    {
+                        temp = line.PadLeft(dts.Length + temp.Length, ' ');
+                    }
+                    temp += '\n';
+
+                    fw.Write(temp);
+                    first = false;
+                }
+
+                if (!message.EndsWith('\n'))
+                {
+                    fw.WriteLine();
+                }
             }
         }
 
         public static void logException(Exception ex, string threadInfo=null)
         {
-            using(var fw = File.AppendText(logFile))
+            string message = "";
+            if (threadInfo != null)
             {
-                fw.WriteLine(DateTime.Now.ToString());
-                fw.WriteLine("------------------------------");
-                if (threadInfo != null)
-                {
-                    fw.WriteLine(String.Format("Thread: {0}", threadInfo));
-                }
-                fw.WriteLine("Exception:");
-                fw.WriteLine(ex.ToString());
-                fw.WriteLine();
-                fw.WriteLine();
+                message += String.Format("Thread: {0}", threadInfo) + '\n';
             }
+
+            message += "Exception: ";
+            bool first = true;
+            foreach (string line in ex.ToString().Split('\n'))
+            {
+                string temp;
+                if (!first)
+                {
+                    temp = line.PadLeft("Exception: ".Length + line.Length, ' ');
+                }
+                else
+                {
+                    temp = line;
+                }
+
+                message += temp + '\n';
+                first = false;
+            }
+
+            logString(message);
         }
     }
 }

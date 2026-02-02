@@ -119,6 +119,9 @@ namespace LE_Formatter
                 }
             }
 
+            List<string> indexedPycPaths = new List<string>();
+
+            // .pyc
             foreach(ZipArchiveEntry entry in za.Entries)
             {
                 if (entry.FullName.EndsWith(".pyc"))
@@ -137,12 +140,47 @@ namespace LE_Formatter
                     try
                     {
                         ie.Add(pycGetCompiledFileName(bytes));
+                        indexedPycPaths.Add(entry.FullName);
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        if (!nonIndexablePycFiles.Contains(exceptionString))
+                        {
+                            nonIndexablePycFiles.Add(exceptionString);
+                            Program.logString(String.Format("The following compiled Python file (.pyc) could not be indexed \"{0}\"", exceptionString));
+                            if(bytes.Length >= 3)
+                            {
+                                Program.logString(String.Format("First three bytes of unindexable .pyc file: {0}", Convert.ToHexString(bytes.Take(3).ToArray())));
+                            }
+                            Program.logException(ex);
+                        }
                     }
                     catch (Exception ex)
                     {
-                        nonIndexablePycFiles.Add(exceptionString);
                         Program.logString(String.Format("The following compiled Python file could not be indexed \"{0}\"", exceptionString));
                         Program.logException(ex);
+                    }
+                }
+            }
+
+            // .py, if a .pyc for it doesn't exist or the .pyc couldn't be loaded
+            foreach (ZipArchiveEntry entry in za.Entries)
+            {
+                if (entry.FullName.EndsWith(".py"))
+                {
+                    bool skip = false;
+                    foreach(string pyc in indexedPycPaths)
+                    {
+                        if (pyc.Substring(0, pyc.Length - 1).Equals(entry.FullName))
+                        {
+                            skip = true;
+                            break;
+                        }
+                    }
+
+                    if (!skip)
+                    {
+                        ie.Add(Path.Combine(path + Path.DirectorySeparatorChar + entry.FullName));
                     }
                 }
             }
@@ -172,21 +210,54 @@ namespace LE_Formatter
                 ie = new indexEntry(name, indexEntry.indexType.scriptFolder, hash, parentPath);
             }
 
-            foreach(string f in files)
+            List<string> indexedPycPaths = new List<string>();
+
+            // .pyc
+            foreach (string f in files)
             {
                 if (nonIndexablePycFiles.Contains(f)) continue;
 
+                byte[] bytes = null;
+
                 try
                 {
-                    ie.Add(pycGetCompiledFileName(File.ReadAllBytes(f)));
+                    bytes = File.ReadAllBytes(f);
+                    ie.Add(pycGetCompiledFileName(bytes));
+                    indexedPycPaths.Add(f);
                 }
-                catch (Exception ex)
+                catch (InvalidOperationException ex)
                 {
-                    nonIndexablePycFiles.Add(f);
-                    Program.logString(String.Format("The following compiled Python file could not be indexed \"{0}\"", f));
-                    Program.logException(ex);
+                    if (!nonIndexablePycFiles.Contains(f))
+                    {
+                        nonIndexablePycFiles.Add(f);
+                        Program.logString(String.Format("The following compiled Python file (.pyc) could not be indexed \"{0}\"", f));
+                        if (bytes != null && bytes.Length >= 3)
+                        {
+                            Program.logString(String.Format("First three bytes of unindexable .pyc file: {0}", Convert.ToHexString(bytes.Take(3).ToArray())));
+                        }
+                        Program.logException(ex);
+                    }
+                }
+            }
+
+            // .py, if a .pyc for it doesn't exist or the .pyc couldn't be loaded
+            files = Directory.GetFiles(path, "*.py", SearchOption.AllDirectories);
+            foreach (string f in files)
+            {
+                bool skip = false;
+                foreach (string pyc in indexedPycPaths)
+                {
+                    if (pyc.Substring(0, pyc.Length - 1).Equals(f))
+                    {
+                        skip = true;
+                        break;
+                    }
                 }
 
+                if (!skip)
+                {
+                    ie.Add(f);
+                }
             }
 
             return ie;
